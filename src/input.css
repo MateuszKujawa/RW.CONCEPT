@@ -3,7 +3,7 @@
 
 
 /* Nav */
-nav {
+/* nav {
     margin: 0;
     display: grid;
     font-family: "Euclid Circular A";
@@ -106,47 +106,70 @@ nav {
   
   body.open .menu ul li {
     animation: appear 0.4s both;
+  } */
+
+
+  .section-padding {
+    padding: 50px 0;
   }
-  /*  */
+  .wrapper {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  header {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+  }
+  .vid-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .nav-area {
+    background: rgba(0, 0, 0, 0.7);
+    height: 60px;
+    position: absolute;
+    width: 100%;
+  }
+  .logo {
+    margin: 10px 50px;
+    height: 60px;
+    float: left;
+    color: #fff;
+    font-size: 35px;
+    text-transform: capitalize;
+  }
+  .menu-area {
+    float: right;
+    list-style: none;
+    margin: 20px;
+  }
+  .menu-area li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .menu-area li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+  }
+  .menu-area li.active a {
+    color: deepskyblue;
+  }
+  .menu-area li a:hover {
+    color: deepskyblue;
+  }
+
+
 
 
   /* baner */
-  section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 110px 100px;
-}
-
-@media (max-width: 1000px) {
-    section{
-        padding: 100px 50px;
-    }
-}
-
-@media (max-width: 600px) {
-    section{
-        padding: 125px 30px;
-    }
-}
-
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    padding: 35px 100px 0;
-  }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
 

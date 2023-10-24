@@ -1,8 +1,17 @@
-// Nav
-const toggleMenu = () => {
-  const body = document.body;
-  const menuUl = document.querySelector('ul');
-  
-  body.classList.toggle("open");
-  menuUl.classList.toggle("hidden");
-};
+    const mobileMenuButton = document.getElementById("mobileMenuButton");
+
+    const closeMobileMenuButton = document.getElementById("closeMobileMenuButton");
+
+    const mobileNav = document.querySelector(".mobileNav");
+
+    mobileMenuButton.addEventListener("click", () => {
+      mobileNav.classList.remove("hidden");
+      mobileMenuButton.classList.add("hidden");
+      closeMobileMenuButton.classList.remove("hidden");
+    });
+
+    closeMobileMenuButton.addEventListener("click", () => {
+      mobileMenuButton.classList.remove("hidden");
+      closeMobileMenuButton.classList.add("hidden");
+      mobileNav.classList.add("hidden");
+});
