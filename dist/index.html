@@ -18,94 +18,80 @@
             font-family: 'Raleway', sans-serif;
             font-family: 'Roboto', sans-serif;
     -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </head>
+
 <body>
-    <div class="w-full absolute -top-20 bg-darkgray">
-        <!-- Navigation bar -->
-    <nav class="sticky top-0 flex justify-between items-center z-20 bg-transparent/30 w-full">
+    <nav class="fixed flex items-center bg-darkgray p-3 flex-wrap w-full z-40">
+        <a href="#" class="mr-4 inline-flex items-center">
+            <img src="/images/logo/logo-small.webp" alt="logo rw.concept" class="w-14">
+        </a>
 
-        <!-- Logo name - left -->
-        <div class="ml-4">
-            <a href="index.html">
-                <img src="/images/logo/logo-small.webp" class="sticky w-20 left-0 p-2" alt="małe logo rw concept">
-            </a>
+        <button class="text-white inline-flex rounded lg:hidden ml-auto outline-none nav-toggler"
+          data-target="#navigation" id="navButton">
+            <i class="fa-solid fa-bars text-2xl p-3 hover:text-yellow-500 duration-300"></i>
+        </button>
+
+        <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+          id="navigation">
+          <div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto mt-10 lg:mt-0 border-t-2 border-yellow-700 lg:border-t-0">
+                <a href="index.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow-500 font-semibold font-raleway uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mt-4 lg:mt-0 mr-2">
+                <span>Strona główna</span>
+                </a>
+                <a href="#partners" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-300 font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
+                <span>Partnerzy</span>
+                </a>
+                <a href="#aboutus" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-300 font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
+                <span>O nas</span>
+                </a>
+                <a href="#products" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-300 font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
+                <span>Produkty</span>
+                </a>
+                <a href="#gallery" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-300 font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
+                <span>Galeria</span>
+                </a>
+                <a href="#contact" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-300 font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
+                <span>Kontakt</span>
+                </a>
+          </div>
         </div>
+      </nav>
 
-        <div class="absolute lg:hidden p-4 right-0">
-            <button id="mobileMenuButton" class="text-white">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-
-        <!-- Mobile nav -->
-        <div class="mobileNav hidden bg-blue-700 h-1/2 w-full">
-            <div class="absolute lg:hidden p-4 right-0">
-                <button id="closeMobileMenuButton" class="text-white hidden">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-
-            <ul class="flex-col text-center text-3xl text-white">
-                <li><a href="">fsdfsdf</a></li>
-                <li><a href="">fsdfsdf</a></li>
-                <li><a href="">fsdfsdf</a></li>
-                <li><a href="">fsdfsdf</a></li>
-            </ul>
-        </div>
-
-        <!-- Nav elements -->
-        <div class="mr-36 md:mr-12">
-            <ul class="hidden lg:flex space-x-2 uppercase text-white font-semibold text-lg">
-                <li>
-                    <a href="index.html" class="tracking-wide p-3 hover:bg-yellow-500 hover:text-darkgray duration-300 rounded-sm">Strona główna</a>
-                </li>
-                <li>
-                    <a href="#aboutMe" class="tracking-wide p-3 hover:bg-yellow-500 hover:text-darkgray duration-300 rounded-sm">Partnerzy</a>
-                </li>
-                <li>
-                    <a href="#projects" class="tracking-wide p-3 hover:bg-yellow-500 hover:text-darkgray duration-300 rounded-sm">O nas</a>
-                </li>
-                <li>
-                    <a href="#contact" class="tracking-wide p-3 hover:bg-yellow-500 hover:text-darkgray duration-300 rounded-sm">Produkty</a>
-                </li>
-                <li>
-                    <a href="#contact" class="tracking-wide p-3 hover:bg-yellow-500 hover:text-darkgray duration-300 rounded-sm">Galeria</a>
-                </li>
-                <li>
-                    <a href="#contact" class="tracking-wide p-3 hover:bg-yellow-500 hover:text-darkgray duration-300 rounded-sm">Kontakt</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header class="relative flex items-center justify-center h-screen mt-2 overflow-hidden">
-        <video autoplay loop muted class="absolute -z-1 w-auto min-w-full min-h-full max-w-none">
-          <source src="/images/img/bg-video-filter-black.mp4" type="video/mp4" />Your browser does not support the video tag.
+      <header class="relative items-center justify-center  overflow-hidden h-screen z-10">
+        <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0">
+            <source src="/images/img/bg-video-filter-black.mp4" type="video/mp4" />Your browser does not support the video tag.
         </video>
 
-        <div class="flex-col justify-center items-center text-center z-10 h-fit">
-            <img src="/images/logo/logo-small.webp" alt="duże logo rw concept" class="mx-auto w-3/4 md:w-full">
-            <div class="w-full h-0.5 bg-yellow-500 rotate-3 mt-10"></div>
-            <h3 class="text-xl md:text-2xl font-light text-white mt-2 uppercase tracking-wider font-poppins rotate-3">Wpadnij do nas!</h3>
-            <a href="#" class="uppercase text-white px-2 py-4 block text-2xl font-normal mt-16 rounded-full border-2 border-yellow-500 bg-black/50 hover:text-darkgray hover:bg-yellow-500 hover:border-slate-300  hover:scale-110 duration-300">przejdz dalej <i class="fa-solid fa-arrow-right text-white ml-3"></i></a>
-        </div>
-    </header>  
+        <div class="w-full h-fit absolute top-[25%] left-0">
+            <div class="w-1/2 mx-auto text-center">
+                <img src="/images/logo/logo-small.webp" alt="" class="flex mx-auto">
+                <div class="h-0.5 mx-auto bg-yellow-500 rotate-3 mt-10 mb-10"></div>
+                <h2 class="text-white font-poppins font-thin uppercase md:text-3xl rotate-3">Wpadnij do nas!</h2>
 
-    <main class="w-full h-screen bg-red-700">
-        <h1>sdfjsdifjsdif</h1>
-        <h2>fsdf0sdfdsf</h2>
-    </main>
-    </div>
+                <a href="#_" class="relative items-center justify-start inline-block px-8 py-3 overflow-hidden font-bold rounded-full group mt-10 hover:scale-110 duration-300">
+                    <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+                    <span class="absolute top-0 left-0 w-52 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-yellow-500 opacity-100 group-hover:-translate-x-8"></span>
+                    <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900 uppercase">Przejdź dalej</span>
+                    <span class="absolute inset-0 border-2 border-yellow-500 rounded-full"></span>
+                    </a>
+            </div>
+        </div>
+    </header>
+
+ 
+
 
 
 
     <!-- Scripts -->
-
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!-- Menu -->
-        <script src="/js/script.js"></script>
+        <script src="/js/menu.js"></script>
         <!-- Awesome Icons -->
         <script src="https://kit.fontawesome.com/3fd4863eda.js" crossorigin="anonymous"></script>
-        <!--  -->
+    <!--  -->
 
 </body>
 </html>
