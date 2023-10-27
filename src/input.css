@@ -1,4 +1,10 @@
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400&display=swap');
+
 
 @media (min-width: 1024px) {
     .top-navbar {
@@ -8,6 +14,54 @@
     }
   }
 
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+   }
+    100% {
+      transform: translateX(calc(-250px * 7));
+   }
+ }
+  .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.904);
+    height: 170px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 90vw;
+    margin-top: 30px;
+    border-radius: 15px;
+ }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 150px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+ }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+ }
+  .slider::before {
+    left: 0;
+    top: 0;
+ }
+  .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+ }
+  .slider .slide {
+    height: 150px;
+    width: 250px;
+ }
+
+ 
 
 @tailwind base;
 @tailwind components;

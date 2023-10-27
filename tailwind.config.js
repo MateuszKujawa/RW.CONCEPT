@@ -10,7 +10,7 @@ module.exports = {
       },
       colors: {
         'darkgray': '#0F0F0F',
-      }
+      },
     },
   },
   plugins: [],
