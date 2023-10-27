@@ -23,7 +23,7 @@ $(document).ready(function () {
         // Hide nav after click event in link
         $("#navigation").slideUp();
         // Toggle nav icon on "hamburger"
-        $(".nav-toggler").html('<i class="fa-solid fa-bars" style="color: #ffffff;"></i>');
+        $(".nav-toggler").html('<i class="fa-solid fa-bars text-white p-3 text-2xl hover:text-yellow-500 duration-300"></i>');
         isOpen = false; // Set state nav on close
       });
     });
