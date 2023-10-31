@@ -18,6 +18,8 @@
             font-family: 'Raleway', sans-serif;
             font-family: 'Roboto', sans-serif;
     -->
+
+    <!-- Icon's -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </head>
@@ -82,13 +84,13 @@
  
     <section class="h-auto pb-24 bg-white" id="partners">
         <div class="slider-title w-full h-auto px-5 md:px-10 py-10">
-            <h1 class="font-poppins font-bold text-darkgray tracking-wide text-center uppercase text-5xl sm:text-5xl lg:text-7xl pt-10">Nasi partnerzy i przyjaciele</h1>
+            <h1 class="font-poppins font-bold text-darkgray tracking-wide text-center uppercase text-3xl md:text-5xl pt-10">Nasi partnerzy i przyjaciele</h1>
         </div>
-
+        
         <div class="slider">
             <div class="slide-track">
                 <div class="slide">
-                    <img src="https://toolboxsystem.pl/img/m/8.jpg" height="250" width="250" alt="" />
+                    <img src="https://toolboxsystem.pl/img/m/8.jpg" height="100" width="250" alt="" />
                 </div>
                 <div class="slide">
                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
@@ -111,49 +113,61 @@
                 <div class="slide">
                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
                 </div>
-                <div class="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-                </div>
             </div>
         </div>
     </section>
 
 
-    <section id="aboutus" class="relative h-screen bg-yellow-500 pt-32">
-        <div class=" bg-darkgray w-fit h-fit">
-            <h1 class="text-yellow-500 font-raleway font-bold uppercase text-5xl md:text-7xl pl-4 pr-10 py-4">o nas</h1>
-        </div>
 
-        <div class="flex-col justify-between md:flex-row">
-            <div class="font-poppins text-lg text-left px-8 mt-16 w-screen md:w-1/2">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut ipsa, asperiores illo ad, necessitatibus natus nulla vel amet nemo aperiam, fuga consequuntur maiores accusantium reprehenderit autem distinctio debitis voluptates?<br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloribus sequi fuga earum in tempore aut inventore accusamus ab culpa suscipit reiciendis, repellat nemo cumque iure quas saepe quae! Culpa!
+
+
+    <section id="aboutus" class="relative h-screen">
+        <div class="bg-darkgray w-full h-full py-10 md:py-24">
+            <h1 class="text-darkgray font-raleway font-extrabold uppercase text-5xl md:text-7xl py-4 bg-yellow-400 w-52 md:w-72 text-center">O nas</h1>
+
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start py-4">
+                <div class="w-full h-1/2 md:w-1/2 md:h-1/2 md:order-1 m-5">
+                    <p class="text-white text-lg md:text-xl px-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non dolor augue. Nullam mattis efficitur varius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Quod labore facere rem culpa libero maxime quae debitis asperiores harum earum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, id officiis sunt ratione aut culpa enim cumque quo cupiditate minima ipsa dolor rerum mollitia. Quae velit fuga eos ratione aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facilis eveniet mollitia possimus beatae? Ratione recusandae veniam iusto at exercitationem!
+                    </p>
+                </div>
+                <div class="w-full h-1/2 md:w-1/2 md:h-full py-10 md:py-10 lg:py-0 md:order-2">
+                    <img src="/images/img/aboutus-bg.jpg" alt="Zdjęcie firmy" class="w-full md:h-full object-cover md:object-contain rounded-sm">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- <section id="aboutus" class="relative h-screen">
+        <div class="bg-darkgray w-full h-full flex justify-between">
+            <div class="w-full h-1/2 md:w-1/2 md:h-full py-20">
+                <h1 class="text-darkgray font-raleway font-bold uppercase text-5xl md:text-7xl py-4 bg-yellow-400 w-52 md:w-72 text-center">O nas</h1>
+
+                <p class="text-white text-lg md:text-xl px-2 pt-20">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non dolor augue. Nullam mattis efficitur varius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Quod labore facere rem culpa libero maxime quae debitis asperiores harum earum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, id officiis sunt ratione aut culpa enim cumque quo cupiditate minima ipsa dolor rerum mollitia. Quae velit fuga eos ratione aut.
+                </p>
+
+                <p class="text-white text-lg md:text-xl px-2 pt-10">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non dolor augue. Nullam mattis efficitur varius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Quod labore facere rem culpa libero maxime quae debitis asperiores harum earum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, id officiis sunt ratione aut culpa enim cumque quo cupiditate minima ipsa dolor rerum mollitia. Quae velit fuga eos ratione aut.
                 </p>
             </div>
-    
-            <img src="/images/img/rwchair.jpg" alt="zdjęcie stanowiska rw.concept" class="w-[12rem] h-[15rem] mx-auto mt-12 md:right-0 md:absolute md:top-52 md:w-[18rem] md:h-[26rem] rounded-md rotate-12 shadow-lg shadow-darkgray ">
         </div>
-    </section>
+    </section> -->
+
+    <!-- <section id="aboutus" class="relative h-screen bg-yellow-500 overflow-hidden">
+            <div class=" bg-darkgray w-fit h-fit mt-32">
+                <h1 class="text-yellow-500 font-raleway font-bold uppercase text-5xl md:text-7xl pl-4 pr-10 py-4">o nas</h1>
+            </div>
+    </section> -->
 
     <section class="h-screen bg-white w-full"></section>
 
     <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
         <!-- jquery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!-- Menu -->

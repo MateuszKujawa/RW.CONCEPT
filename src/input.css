@@ -25,7 +25,7 @@ html{
  }
   .slider {
     background: white;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.904);
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.904);
     height: 170px;
     margin: auto;
     overflow: hidden;
@@ -35,9 +35,9 @@ html{
     border-radius: 15px;
  }
   .slider::before, .slider::after {
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.562) 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
-    height: 150px;
+    height: 170px;
     position: absolute;
     width: 200px;
     z-index: 2;
@@ -52,7 +52,7 @@ html{
     top: 0;
  }
   .slider .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 10s linear infinite;
     display: flex;
     width: calc(250px * 14);
  }
@@ -62,6 +62,8 @@ html{
  }
 
  
+
+
 
 @tailwind base;
 @tailwind components;
