@@ -66,6 +66,7 @@
                         <i class="fa-solid fa-chevron-down text-current ml-2 transform rotate-0 duration-100"></i>
                     </button>
                     <div class="absolute hidden mt-2 py-2 pb-4 w-[250px] bg-zinc-800 text-white border border-darkgray border-t-0 rounded-lg z-10 dropdown-menu transition-all duration-300" id="productsDropdown">
+                        <a href="#product0" class="block px-3 py-2 font-normal hover:bg-yellow-500 hover:text-darkgray duration-300">Wszystkie produkty</a>
                         <a href="#product1" class="block px-3 py-2 font-normal hover:bg-yellow-500 hover:text-darkgray duration-300">Car detailing</a>
                         <a href="#product2" class="block px-3 py-2 font-normal hover:bg-yellow-500 hover:text-darkgray duration-300">Części samochodowe</a>
                         <a href="#product3" class="block px-3 py-2 font-normal hover:bg-yellow-500 hover:text-darkgray duration-300">Akcesoria</a>
@@ -82,7 +83,7 @@
 
       <header class="relative items-center justify-center  overflow-hidden h-screen z-10">
         <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0">
-            <source src="/images/img/bg-video-filter-black.mp4" type="video/mp4" />Your browser does not support the video tag.
+            <source src="/images/img/rwfilm.mp4" type="video/mp4" />Your browser does not support the video tag.
         </video>
 
         <div class="w-full h-fit absolute top-[25%] left-0">
@@ -164,29 +165,22 @@
             <div class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <template x-for="post in posts">
                     <!-- Card Item -->
-                    <div
-                        class="my-8 rounded shadow-lg shadow-gray-900 bg-darkgray duration-300 hover:-translate-y-2"
+                    <div class="card my-8 rounded shadow-lg shadow-gray-900 bg-darkgray duration-300 hover:-translate-y-2"
                         x-for="(post, index) in posts">
                         <!-- Clickable Area -->
                         <div>
                             <figure>
                                 <!-- Image -->
-                                <img
-                                    :src="post.image + '?auto=format&fit=crop&w=400&q=50'"
-                                    class="rounded-t h-72 w-full object-cover" />
+                                <img :src="post.image + '?auto=format&fit=crop&w=400&q=50'" class="rounded-t h-72 w-full object-cover" />
     
                                 <figcaption class="p-4">
                                     <!-- Title -->
-                                    <p
-                                        class="text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300"
-                                        x-text="post.title">
+                                    <p class="text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300" x-text="post.title">
                                         <!-- Post Title -->
                                     </p>
     
                                     <!-- Description -->
-                                    <small
-                                        class="leading-5 text-gray-500 dark:text-gray-400"
-                                        x-text="post.description">
+                                    <small class="leading-5 text-gray-500 dark:text-gray-400" x-text="post.description">
                                         <!-- Post Description -->
                                     </small>
                                 </figcaption>
