@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
+    <!-- Cards script defer -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
 </head>
 
 <body>
@@ -36,30 +39,40 @@
 
         <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto h-[50vh] md:h-auto" id="navigation">
             <div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto mt-10 lg:mt-0 border-t-2 border-yellow-700 lg:border-t-0">
+                
                 <a href="index.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow-500 font-semibold font-raleway uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mt-4 lg:mt-0 mr-2">
                     <span>Strona główna</span>
                 </a>
+
                 <a href="#partners" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
                     <span>Partnerzy</span>
                 </a>
+
                 <a href="#aboutus" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
                     <span>O nas</span>
                 </a>
+
+                <a href="#news" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover-bg-yellow-500 hover:text-darkgray hover:bg-yellow-500 duration-300 mr-2">
+                    <span>Aktualności</span>
+                </a>
+
+                <a href="#gallery" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover-bg-yellow-500 hover:text-darkgray hover:bg-yellow-500 duration-300 mr-2">
+                    <span>Galeria</span>
+                </a>
+
                 <div class="relative group">
                     <button class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-between hover:bg-yellow-500 hover:text-darkgray duration-300 dropdown-button" id="productsDropdownButton">
                         <span>Produkty</span>
                         <i class="fa-solid fa-chevron-down text-current ml-2 transform rotate-0 duration-100"></i>
                     </button>
-                    <div class="absolute hidden mt-2 py-2 pb-4 w-[250px] bg-darkgray text-white border border-darkgray border-t-0 rounded-lg z-10 dropdown-menu transition-all duration-300" id="productsDropdown">
+                    <div class="absolute hidden mt-2 py-2 pb-4 w-[250px] bg-zinc-800 text-white border border-darkgray border-t-0 rounded-lg z-10 dropdown-menu transition-all duration-300" id="productsDropdown">
                         <a href="#product1" class="block px-3 py-2 font-normal hover:bg-yellow-500 hover:text-darkgray duration-300">Car detailing</a>
-                        <a href "#product2" class="block px-3 py-2 font-normal hover:bg-yellow-500 hover:text-darkgray duration-300">Części samochodowe</a>
+                        <a href="#product2" class="block px-3 py-2 font-normal hover:bg-yellow-500 hover:text-darkgray duration-300">Części samochodowe</a>
                         <a href="#product3" class="block px-3 py-2 font-normal hover:bg-yellow-500 hover:text-darkgray duration-300">Akcesoria</a>
                         <a href="#product3" class="block px-3 py-2 font-normal hover:bg-yellow-500 hover:text-darkgray duration-300">Oleje i płyny</a>
                     </div>
                 </div>
-                <a href="#gallery" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover-bg-yellow-500 hover:text-darkgray hover:bg-yellow-500 duration-300 mr-2">
-                    <span>Galeria</span>
-                </a>
+
                 <a href="#contact" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
                     <span>Kontakt</span>
                 </a>
@@ -128,40 +141,108 @@
 
             <div class="flex flex-col md:flex-row justify-between items-center md:items-start py-4">
                 <div class="w-full h-1/2 md:w-1/2 md:h-1/2 md:order-1 m-5">
-                    <p class="text-white text-lg md:text-xl px-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non dolor augue. Nullam mattis efficitur varius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Quod labore facere rem culpa libero maxime quae debitis asperiores harum earum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, id officiis sunt ratione aut culpa enim cumque quo cupiditate minima ipsa dolor rerum mollitia. Quae velit fuga eos ratione aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facilis eveniet mollitia possimus beatae? Ratione recusandae veniam iusto at exercitationem!
+                    <p class="text-white text-bae md:text-xl px-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non dolor augue. Nullam mattis efficitur varius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Quod labore facere rem culpa libero maxime quae debitis asperiores harum earum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, id officiis sunt ratione aut culpa enim cumque quo cupiditate minima ipsa dolor rerum mollitia. Quae velit fuga eos ratione aut. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
-                <div class="w-full h-1/2 md:w-1/2 md:h-full py-10 md:py-10 lg:py-0 md:order-2">
-                    <img src="/images/img/aboutus-bg.jpg" alt="Zdjęcie firmy" class="w-full md:h-full object-cover md:object-contain rounded-sm">
+                <div class="w-full md:w-1/2 py-4 md:py-0 md:order-2">
+                    <img src="/images/img/aboutus-bg.jpg" alt="Zdjęcie firmy" class="object-cover md:object-contain rounded-lg">
                 </div>
             </div>
-            
         </div>
     </section>
 
-    <section id="products" class="h-screen w-full">
+ 
+    
 
+    <section x-data="xData()" class="bg-yellow-500 pt-10" id="news">
+
+        <h1 class="text-yellow-500 font-raleway font-extrabold uppercase text-5xl md:text-7xl py-4 px-4 bg-darkgray w-fit text-center">Aktualności</h1>
+
+        <!-- Card Grid -->
+        <div class="py-2 px-12">
+            <div class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <template x-for="post in posts">
+                    <!-- Card Item -->
+                    <div
+                        class="my-8 rounded shadow-lg shadow-gray-900 bg-darkgray duration-300 hover:-translate-y-2"
+                        x-for="(post, index) in posts">
+                        <!-- Clickable Area -->
+                        <div>
+                            <figure>
+                                <!-- Image -->
+                                <img
+                                    :src="post.image + '?auto=format&fit=crop&w=400&q=50'"
+                                    class="rounded-t h-72 w-full object-cover" />
+    
+                                <figcaption class="p-4">
+                                    <!-- Title -->
+                                    <p
+                                        class="text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300"
+                                        x-text="post.title">
+                                        <!-- Post Title -->
+                                    </p>
+    
+                                    <!-- Description -->
+                                    <small
+                                        class="leading-5 text-gray-500 dark:text-gray-400"
+                                        x-text="post.description">
+                                        <!-- Post Description -->
+                                    </small>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </template>
+            </div>
+    
+    
+            <div class="w-full flex items-center justify-center">
+                <a href="index.html" class="relative items-center justify-start inline-block px-8 py-3 overflow-hidden font-bold rounded-full group mt-10 hover:bg-darkgray hover:scale-110 duration-300">
+                    <span class="relative w-full text-left text-darkgray transition-colors duration-200 ease-in-out group-hover:text-white uppercase">Wszystkie aktualności</span>
+                    <span class="absolute inset-0 border-2 border-darkgray rounded-full"></span>
+                    </a>
+            </div>
+        </div>
+        
     </section>
 
-    <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-        <!-- jquery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
+
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
         <!-- Menu -->
         <script src="/js/menu.js"></script>
+
+
         <!-- Dropdown menu -->
         <script src="/js/dropdown.js"></script>
+
+
         <!-- Slider -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="/js/slider.js"></script>
+
+
         <!-- Awesome Icons -->
         <script src="https://kit.fontawesome.com/3fd4863eda.js" crossorigin="anonymous"></script>
-    <!--  -->
+
+        <!-- Cards -->
+        <script src="/js/newsCards.js"></script>
+
 
 </body>
 </html>
