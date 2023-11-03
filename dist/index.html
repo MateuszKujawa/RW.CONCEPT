@@ -138,27 +138,35 @@
 
     <section id="aboutus" class="relative h-screen">
         <div class="bg-darkgray w-full h-full py-10 md:py-24">
-            <h1 class="text-darkgray font-raleway font-extrabold uppercase text-5xl md:text-7xl py-4 bg-yellow-400 w-52 md:w-72 text-center">O nas</h1>
+            <h1 class="text-darkgray font-raleway font-extrabold uppercase text-4xl md:text-7xl py-4 bg-yellow-400 w-52 md:w-72 text-center">O nas</h1>
 
             <div class="flex flex-col md:flex-row justify-between items-center md:items-start py-4">
                 <div class="w-full h-1/2 md:w-1/2 md:h-1/2 md:order-1 m-5">
-                    <p class="text-white text-bae md:text-xl px-2">
+                    <p class="text-white text-base md:text-xl px-2">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non dolor augue. Nullam mattis efficitur varius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Quod labore facere rem culpa libero maxime quae debitis asperiores harum earum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, id officiis sunt ratione aut culpa enim cumque quo cupiditate minima ipsa dolor rerum mollitia. Quae velit fuga eos ratione aut. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
-                <div class="w-full md:w-1/2 py-4 md:py-0 md:order-2">
+                <div class="w-[80%] h-1/2 md:h-2/3 md:w-1/2 py-4 md:py-0 md:order-2">
                     <img src="/images/img/aboutus-bg.jpg" alt="Zdjęcie firmy" class="object-cover md:object-contain rounded-lg">
                 </div>
             </div>
         </div>
     </section>
 
+
+
+
+
+
+
+
  
     
 
-    <section x-data="xData()" class="bg-yellow-500 pt-10" id="news">
+    <section x-data="xData()" class="bg-yellow-400 pt-10 pb-10" id="news">
 
-        <h1 class="text-yellow-500 font-raleway font-extrabold uppercase text-5xl md:text-7xl py-4 px-4 bg-darkgray w-fit text-center">Aktualności</h1>
+
+        <h1 class="text-yellow-400 font-raleway font-extrabold uppercase text-4xl md:text-7xl py-4 px-4 bg-darkgray w-fit text-center">Aktualności</h1>
 
         <!-- Card Grid -->
         <div class="py-2 px-12">
@@ -189,19 +197,129 @@
                     </div>
                 </template>
             </div>
-    
-    
-            <div class="w-full flex items-center justify-center">
-                <a href="index.html" class="relative items-center justify-start inline-block px-8 py-3 overflow-hidden font-bold rounded-full group mt-10 hover:bg-darkgray hover:scale-110 duration-300">
-                    <span class="relative w-full text-left text-darkgray transition-colors duration-200 ease-in-out group-hover:text-white uppercase">Wszystkie aktualności</span>
-                    <span class="absolute inset-0 border-2 border-darkgray rounded-full"></span>
+        
+            <div class="w-full mx-auto text-center mt-10">
+                <a href="#_" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-darkgray rounded-lg shadow-md group">
+                    <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-darkgray group-hover:translate-x-0 ease">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </span>
+                    <span class="absolute flex items-center justify-center w-full h-full text-darkgray transition-all duration-300 transform group-hover:translate-x-full ease">Wszystkie aktualności</span>
+                    <span class="relative invisible">Wszystkie aktualności</span>
                     </a>
             </div>
         </div>
-        
     </section>
 
 
+    <section id="galery">
+            
+        <h1 class="text-center text-4xl px-10">Galeria zdjęć</h1>
+
+        <swiper-container class="mySwiper" navigation="true">
+            <swiper-slide>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-20 py-20">
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img3.webp" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img4.webp" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img5.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img6.jpg" alt="">
+                    </div>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-20 py-20">
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img1.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-20 py-20">
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img2.jpg" alt="">
+                    </div>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-20 py-20">
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img3.webp" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img3.webp" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img3.webp" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img3.webp" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img3.webp" alt="">
+                    </div>
+                    <div>
+                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img3.webp" alt="">
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+    </section>
 
 
 
@@ -230,6 +348,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="/js/slider.js"></script>
 
+        <!-- Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
         <!-- Awesome Icons -->
         <script src="https://kit.fontawesome.com/3fd4863eda.js" crossorigin="anonymous"></script>
