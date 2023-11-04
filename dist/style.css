@@ -3,6 +3,31 @@ html{
   overflow-x: hidden;
 }
 
+/* Scrollbar style */
+
+/* Firefox */
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #ffae00 #3b3b3b;
+}
+
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffae00;
+  border-radius: 8px;
+  border: 2px solid #2d2a25;
+}
+
 /* Swiper style */
 
 swiper-container {
@@ -25,6 +50,37 @@ swiper-slide img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* Gallery */
+
+/* .gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+} */
+
+.gallery .a-desktop{
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px #0000005e;
+}
+
+.gallery .a-desktop .img-desktop{
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: .5s ease;
+}
+
+.gallery a .img-desktop:hover{
+  scale: 1.2;
 }
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -561,40 +617,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container{
-  width: 100%;
-}
-
-@media (min-width: 640px){
-  .container{
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px){
-  .container{
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px){
-  .container{
-    max-width: 1536px;
-  }
-}
-
 .invisible{
   visibility: hidden;
 }
@@ -637,6 +659,10 @@ video {
 
 .z-40{
   z-index: 40;
+}
+
+.m-12{
+  margin: 3rem;
 }
 
 .m-5{
@@ -798,6 +824,14 @@ video {
   width: 80%;
 }
 
+.w-\[85\%\]{
+  width: 85%;
+}
+
+.w-\[95\%\]{
+  width: 95%;
+}
+
 .w-auto{
   width: auto;
 }
@@ -813,10 +847,6 @@ video {
 
 .min-w-full{
   min-width: 100%;
-}
-
-.max-w-full{
-  max-width: 100%;
 }
 
 .max-w-none{
@@ -871,10 +901,6 @@ video {
   grid-auto-flow: row;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -901,10 +927,6 @@ video {
 
 .justify-between{
   justify-content: space-between;
-}
-
-.gap-4{
-  gap: 1rem;
 }
 
 .gap-8{
@@ -1016,11 +1038,6 @@ video {
   padding-right: 0.5rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1054,11 +1071,6 @@ video {
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .py-3{
@@ -1372,10 +1384,6 @@ video {
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row{

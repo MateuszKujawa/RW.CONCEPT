@@ -3,6 +3,28 @@ html{
   overflow-x: hidden;
 }
 
+/* Scrollbar style */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ffae00 #3b3b3b;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #0F0F0F;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffae00;
+    border-radius: 8px;
+    border: 2px solid #2d2a25;
+  }
+
 
 /* Swiper style */
 swiper-container {
@@ -29,6 +51,34 @@ swiper-slide img {
 
 
 
+/* Gallery */
+/* .gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+} */
+
+.gallery .a-desktop{
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px #0000005e;
+}
+
+.gallery .a-desktop .img-desktop{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+}
+
+.gallery a .img-desktop:hover{
+  scale: 1.2;
+}
 
 
 

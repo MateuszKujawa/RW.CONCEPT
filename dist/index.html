@@ -24,6 +24,12 @@
 
     <!-- Cards script defer -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- LightGallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
 
@@ -83,7 +89,7 @@
 
       <header class="relative items-center justify-center  overflow-hidden h-screen z-10">
         <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0">
-            <source src="/images/img/rwfilm.mp4" type="video/mp4" />Your browser does not support the video tag.
+            <source src="/images/img/Projekt_1.mp4" type="video/mp4" />Your browser does not support the video tag.
         </video>
 
         <div class="w-full h-fit absolute top-[25%] left-0">
@@ -211,71 +217,95 @@
     </section>
 
 
-    <section id="galery">
+    <section id="galery" class="h-screen">
             
-        <h1 class="text-center text-4xl px-10">Galeria zdjęć</h1>
+        <h1 class="text-center text-4xl px-10 mt-10">Galeria zdjęć</h1>
 
-
-        <swiper-container class="mySwiper" navigation="true">
+        <!-- Mobile swiper -->
+        <swiper-container class="mySwiper w-full h-fit" navigation="true" id="mobileElement">
+            <swiper-slide class="h-fit">
+                <div class="gallery flex justify-center flex-wrap w-[95%] mx-auto">
+                    <a href="/images/img/galery/img1.jpg" class="h-full w-full object-cover m-12">
+                        <img src="/images/img/galery/img1.jpg" class="w-full h-full object-cover">
+                    </a>
+                </div>
+            </swiper-slide>
             <swiper-slide>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-20 py-20">
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img1.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img2.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img3.webp" alt="">
-                    </div>
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img4.webp" alt="">
-                    </div>
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img5.jpeg" alt="">
-                    </div>
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img6.jpg" alt="">
-                    </div>
+                <div class="gallery flex justify-center flex-wrap w-full mx-auto">
+                    <a href="/images/img/galery/img2.jpg" class="h-full w-full object-cover m-12">
+                        <img src="/images/img/galery/img2.jpg" class="w-full h-full object-cover">
+                    </a>
                 </div>
             </swiper-slide>
 
-
             <swiper-slide>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-20 py-20">
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img1.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img2.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img3.webp" alt="">
-                    </div>
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img4.webp" alt="">
-                    </div>
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img5.jpeg" alt="">
-                    </div>
-                    <div>
-                        <img class="h-full max-w-full rounded-lg" src="/images/img/galery/img6.jpg" alt="">
-                    </div>
+                <div class="gallery flex justify-center flex-wrap w-full mx-auto">
+                    <a href="/images/img/galery/img3.webp" class="h-full w-full object-cover m-12">
+                        <img src="/images/img/galery/img3.webp" class="w-full h-full object-cover">
+                    </a>
                 </div>
             </swiper-slide>
         </swiper-container>
 
 
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+        <!-- Desktop swiper -->
+        <swiper-container class="mySwiper px-4" id="desktopElement" navigation="true" pagination="true">
+            
+            <swiper-slide>
+                <div class="gallery flex justify-center flex-wrap w-[85%] mx-auto">
+                    <a href="/images/img/galery/img1.jpg" class="a-desktop">
+                        <img src="/images/img/galery/img1.jpg" class="img-desktop">
+                    </a>
+                    <a href="/images/img/galery/img2.jpg" class="a-desktop">
+                        <img src="/images/img/galery/img2.jpg" class="img-desktop">
+                    </a>
+                    <a href="/images/img/galery/img3.webp" class="a-desktop">
+                        <img src="/images/img/galery/img3.webp" class="img-desktop">
+                    </a>
+                    <a href="/images/img/galery/img4.webp" class="a-desktop">
+                        <img src="/images/img/galery/img4.webp" class="img-desktop">
+                    </a>
+                    <a href="/images/img/galery/img5.jpeg" class="a-desktop">
+                        <img src="/images/img/galery/img5.jpeg" class="img-desktop">
+                    </a>
+                    <a href="/images/img/galery/img6.jpg" class="a-desktop">
+                        <img src="/images/img/galery/img6.jpg" class="img-desktop">
+                    </a>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="gallery flex justify-center flex-wrap w-full mx-auto">
+                    <a href="/images/img/galery/img1.jpg" class="a-desktop">
+                        <img src="/images/img/galery/img1.jpg" class="img-desktop">
+                    </a>
+                    <a href="/images/img/galery/img2.jpg" class="a-desktop">
+                        <img src="/images/img/galery/img2.jpg" class="img-desktop">
+                    </a>
+                    <a href="/images/img/galery/img3.webp" class="a-desktop">
+                        <img src="/images/img/galery/img3.webp" class="img-desktop">
+                    </a>
+                    <a href="/images/img/galery/img4.webp" class="a-desktop">
+                        <img src="/images/img/galery/img4.webp" class="img-desktop">
+                    </a>
+                    <a href="/images/img/galery/img5.jpeg" class="a-desktop">
+                        <img src="/images/img/galery/img5.jpeg" class="img-desktop">
+                    </a>
+                    <a href="/images/img/galery/img6.jpg" class="a-desktop">
+                        <img src="/images/img/galery/img6.jpg" class="img-desktop">
+                    </a>
+                </div>
+            </swiper-slide>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </swiper-container>
+        
 
     </section>
 
+
+   
+    
 
 
 
@@ -298,8 +328,6 @@
         <!-- Dropdown menu -->
         <script src="/js/dropdown.js"></script>
 
-        <!-- LightGallery -->
-
         <!-- Slider -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="/js/slider.js"></script>
@@ -307,12 +335,20 @@
         <!-- Swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+        <!-- LightGallery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            lightGallery(document.querySelector('.gallery'));
+        </script>
+
         <!-- Awesome Icons -->
         <script src="https://kit.fontawesome.com/3fd4863eda.js" crossorigin="anonymous"></script>
 
         <!-- Cards -->
         <script src="/js/newsCards.js"></script>
 
+        <!-- Main scripts -->
+        <script src="/js/main.js"></script>
 
 </body>
 </html>
