@@ -771,8 +771,8 @@ video {
   height: 18rem;
 }
 
-.h-\[50vh\]{
-  height: 50vh;
+.h-\[95vh\]{
+  height: 95vh;
 }
 
 .h-auto{
@@ -789,6 +789,10 @@ video {
 }
 
 .h-screen{
+  height: 100vh;
+}
+
+.h-\[100vh\]{
   height: 100vh;
 }
 
