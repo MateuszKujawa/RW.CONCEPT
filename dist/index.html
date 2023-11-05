@@ -18,6 +18,7 @@
     -->
     <!-- Icon's -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
     <!-- Slider CDN's -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
@@ -25,11 +26,9 @@
     <!-- Cards script defer -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <!-- Swiper Css -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-    <!-- LightGallery -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     
 </head>
 
@@ -140,42 +139,38 @@
 
 
 
+    <section id="aboutus" class="relative h-fit flex bg-darkgray">
+            <div class="text-container w-full md:w-1/2 flex flex-col justify-center items-start p-4 md:p-16">
+                <p class="text-white font-raleway text-base md:text-lg lg:text-xl pt-10 pb-10 md:pt-0">
+                Opis sekcji o nas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione corrupti deleniti architecto, ex iste doloribus magnam consequatur laudantium odit perspiciatis, illum, eos repellendus hic itaque tempore veniam provident ipsum! Non?.<br><br>
 
+                Opis sekcji o nas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione corrupti deleniti architecto, ex iste doloribus magnam consequatur laudantium odit perspiciatis, illum, eos repellendus hic itaque tempore veniam provident ipsum! Non?.
+                Opis sekcji o nas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione corrupti deleniti architecto, ex iste doloribus magnam consequatur.<BR>
+                </p>
 
-    <section id="aboutus" class="relative h-screen">
-        <div class="bg-darkgray w-full h-full py-10 md:py-24">
-            <h1 class="text-darkgray font-raleway font-extrabold uppercase text-4xl md:text-7xl py-4 bg-yellow-400 w-52 md:w-72 text-center">O nas</h1>
+                <div class="flex w-fit h-fit space-x-10">
+                    <i class="fa-brands fa-facebook-f" style="color: rgb(37, 37, 204); font-size: 40px; cursor: pointer;"></i>
+                    <i class="fa-brands fa-instagram" style="color: purple; font-size: 40px; cursor: pointer;"></i>
+                    <i class="fa-brands fa-youtube" style="color: red; font-size: 40px; cursor: pointer;"></i>
 
-            <div class="flex flex-col md:flex-row justify-between items-center md:items-start py-4">
-                <div class="w-full h-1/2 md:w-1/2 md:h-1/2 md:order-1 m-5">
-                    <p class="text-white text-base md:text-xl px-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non dolor augue. Nullam mattis efficitur varius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Quod labore facere rem culpa libero maxime quae debitis asperiores harum earum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, id officiis sunt ratione aut culpa enim cumque quo cupiditate minima ipsa dolor rerum mollitia. Quae velit fuga eos ratione aut. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-                <div class="w-[80%] h-1/2 md:h-2/3 md:w-1/2 py-4 md:py-0 md:order-2">
-                    <img src="/images/img/aboutus-bg.jpg" alt="Zdjęcie firmy" class="object-cover md:object-contain rounded-lg">
                 </div>
             </div>
-        </div>
+            <div class="image-container w-full md:w-1/2 bg-image bg-center bg-no-repeat bg-cover justify-center items-center">
+                <div class="image-text">
+                    <h1 class="text-white font-raleway font-extrabold uppercase text-5xl md:text-5xl lg:text-7xl bg-darkgray/60 px-4 py-2 ">O nas</h1>
+                </div>
+            </div>
     </section>
 
-
-
-
-
-
-
-
- 
     
 
-    <section x-data="xData()" class="bg-yellow-400 pt-10 pb-10" id="news">
+    <section x-data="xData()" class="h-fit bg-yellow-400 py-20" id="news">
 
 
         <h1 class="text-yellow-400 font-raleway font-extrabold uppercase text-4xl md:text-7xl py-4 px-4 bg-darkgray w-fit text-center">Aktualności</h1>
 
         <!-- Card Grid -->
-        <div class="py-2 px-12">
+        <div class="mt-10 px-4">
             <div class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <template x-for="post in posts">
                     <!-- Card Item -->
@@ -205,11 +200,11 @@
             </div>
         
             <div class="w-full mx-auto text-center mt-10">
-                <a href="#_" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-darkgray rounded-lg shadow-md group">
+                <a href="#_" class="relative inline-flex items-center justify-center p-4 px-10 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-darkgray rounded-lg shadow-md group">
                     <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-darkgray group-hover:translate-x-0 ease">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </span>
-                    <span class="absolute flex items-center justify-center w-full h-full text-darkgray transition-all duration-300 transform group-hover:translate-x-full ease">Wszystkie aktualności</span>
+                    <span class="absolute flex items-center justify-center w-full h-full text-darkgray text-xl transition-all duration-300 transform group-hover:translate-x-full ease">Wszystkie aktualności</span>
                     <span class="relative invisible">Wszystkie aktualności</span>
                     </a>
             </div>
@@ -217,100 +212,191 @@
     </section>
 
 
-    <section id="galery" class="h-screen">
-            
-        <h1 class="text-center text-4xl px-10 mt-10">Galeria zdjęć</h1>
+    <section id="gallery" class="h-fit py-20 bg-darkgray">
 
-        <!-- Mobile swiper -->
-        <swiper-container class="mySwiper w-full h-fit" navigation="true" id="mobileElement">
-            <swiper-slide class="h-fit">
-                <div class="gallery flex justify-center flex-wrap w-[95%] mx-auto">
-                    <a href="/images/img/galery/img1.jpg" class="h-full w-full object-cover m-12">
-                        <img src="/images/img/galery/img1.jpg" class="w-full h-full object-cover">
-                    </a>
-                </div>
-            </swiper-slide>
+        <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true" pagination="true">
             <swiper-slide>
-                <div class="gallery flex justify-center flex-wrap w-full mx-auto">
-                    <a href="/images/img/galery/img2.jpg" class="h-full w-full object-cover m-12">
-                        <img src="/images/img/galery/img2.jpg" class="w-full h-full object-cover">
-                    </a>
-                </div>
+                <img src="/images/img/galery/img1.jpg" />
             </swiper-slide>
 
             <swiper-slide>
-                <div class="gallery flex justify-center flex-wrap w-full mx-auto">
-                    <a href="/images/img/galery/img3.webp" class="h-full w-full object-cover m-12">
-                        <img src="/images/img/galery/img3.webp" class="w-full h-full object-cover">
-                    </a>
-                </div>
+                <img src="/images/img/galery/img2.jpg" />
             </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img3.jpg" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img4.webp" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img5.jpeg" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img6.jpg" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img2.jpg" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img4.webp" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img1.jpg" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img6.jpg" />
+            </swiper-slide>
+
         </swiper-container>
 
-
-        <!-- Desktop swiper -->
-        <swiper-container class="mySwiper px-4" id="desktopElement" navigation="true" pagination="true">
-            
+        <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true" watch-slides-progress="true">
             <swiper-slide>
-                <div class="gallery flex justify-center flex-wrap w-[85%] mx-auto">
-                    <a href="/images/img/galery/img1.jpg" class="a-desktop">
-                        <img src="/images/img/galery/img1.jpg" class="img-desktop">
-                    </a>
-                    <a href="/images/img/galery/img2.jpg" class="a-desktop">
-                        <img src="/images/img/galery/img2.jpg" class="img-desktop">
-                    </a>
-                    <a href="/images/img/galery/img3.webp" class="a-desktop">
-                        <img src="/images/img/galery/img3.webp" class="img-desktop">
-                    </a>
-                    <a href="/images/img/galery/img4.webp" class="a-desktop">
-                        <img src="/images/img/galery/img4.webp" class="img-desktop">
-                    </a>
-                    <a href="/images/img/galery/img5.jpeg" class="a-desktop">
-                        <img src="/images/img/galery/img5.jpeg" class="img-desktop">
-                    </a>
-                    <a href="/images/img/galery/img6.jpg" class="a-desktop">
-                        <img src="/images/img/galery/img6.jpg" class="img-desktop">
-                    </a>
-                </div>
+                <img src="/images/img/galery/img1.jpg" />
             </swiper-slide>
 
             <swiper-slide>
-                <div class="gallery flex justify-center flex-wrap w-full mx-auto">
-                    <a href="/images/img/galery/img1.jpg" class="a-desktop">
-                        <img src="/images/img/galery/img1.jpg" class="img-desktop">
-                    </a>
-                    <a href="/images/img/galery/img2.jpg" class="a-desktop">
-                        <img src="/images/img/galery/img2.jpg" class="img-desktop">
-                    </a>
-                    <a href="/images/img/galery/img3.webp" class="a-desktop">
-                        <img src="/images/img/galery/img3.webp" class="img-desktop">
-                    </a>
-                    <a href="/images/img/galery/img4.webp" class="a-desktop">
-                        <img src="/images/img/galery/img4.webp" class="img-desktop">
-                    </a>
-                    <a href="/images/img/galery/img5.jpeg" class="a-desktop">
-                        <img src="/images/img/galery/img5.jpeg" class="img-desktop">
-                    </a>
-                    <a href="/images/img/galery/img6.jpg" class="a-desktop">
-                        <img src="/images/img/galery/img6.jpg" class="img-desktop">
-                    </a>
-                </div>
+                <img src="/images/img/galery/img2.jpg" />
             </swiper-slide>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img3.jpg" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img4.webp" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img5.jpeg" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img6.jpg" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img2.jpg" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img4.webp" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img1.jpg" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="/images/img/galery/img6.jpg" />
+            </swiper-slide>
+
         </swiper-container>
-        
 
     </section>
 
+    <section id="contact">
+        <div class="py-20 bg-darkgray border-t border-zinc-800">
+            <div class="max-w-6xl mx-auto bg-darkgray rounded-lg">
+                <div class="grid md:grid-cols-2 items-center gap-16 sm:p-10 p-4 font-[sans-serif]">
+                    <div>
+                        <h1 class="text-4xl font-extrabold text-white">Skontaktuj się z nami</h1>
+                        <p class="text-sm text-gray-400 mt-3">Masz pytanie lub jesteś zainteresowany współpracą z nami? Napisz do nas a na pewno się odezwiemy!</p>
+                        <ul class="mt-12 space-y-8">
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='rgb(234 179 8)'
+                                    viewBox="0 0 479.058 479.058">
+                                    <path
+                                        d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
+                                        data-original="#000000" />
+                                </svg>
+                                <a href="javascript:void(0)" class="text-white text-sm ml-3">
+                                    <strong>rwconcept@info.pl</strong>
+                                </a>
+                            </li>
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='rgb(234 179 8)' viewBox="0 0 482.6 482.6">
+                                    <path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z" data-original="#000000"></path>
+                                </svg>
+                                <a href="javascript:void(0)" class="text-white text-sm ml-3">
+                                    <strong>+48 111 222 333</strong>
+                                </a>
+                            </li>
+                            <li class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='rgb(234 179 8)' viewBox="0 0 368.16 368.16">
+                                    <path d="M184.08 0c-74.992 0-136 61.008-136 136 0 24.688 11.072 51.24 11.536 52.36 3.576 8.488 10.632 21.672 15.72 29.4l93.248 141.288c3.816 5.792 9.464 9.112 15.496 9.112s11.68-3.32 15.496-9.104l93.256-141.296c5.096-7.728 12.144-20.912 15.72-29.4.464-1.112 11.528-27.664 11.528-52.36 0-74.992-61.008-136-136-136zM293.8 182.152c-3.192 7.608-9.76 19.872-14.328 26.8l-93.256 141.296c-1.84 2.792-2.424 2.792-4.264 0L88.696 208.952c-4.568-6.928-11.136-19.2-14.328-26.808-.136-.328-10.288-24.768-10.288-46.144 0-66.168 53.832-120 120-120s120 53.832 120 120c0 21.408-10.176 45.912-10.28 46.152z" data-original="#000000"></path>
+                                    <path d="M184.08 64.008c-39.704 0-72 32.304-72 72s32.296 72 72 72 72-32.304 72-72-32.296-72-72-72zm0 128c-30.872 0-56-25.12-56-56s25.128-56 56-56 56 25.12 56 56-25.128 56-56 56z" data-original="#000000"></path>
+                                </svg>
+                                <a href="javascript:void(0)" class="text-white text-sm ml-3">
+                                    <strong>Słupca, Plac Wolności 3/4</strong>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="flex mt-12 space-x-4">
+                            <li class="bg-yellow-500 hover:bg-yellow-600 h-12 w-12 rounded-full flex items-center justify-center shrink-0">
+                                <a href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" fill='#0F0F0F'
+                                     viewBox="0 0 24 24">
+                                        <path
+                                            d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z"
+                                            data-original="#000000" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="bg-yellow-500 hover:bg-yellow-600 h-12 w-12 rounded-full flex items-center justify-center shrink-0">
+                                <a href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" fill="#0F0F0F" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                      </svg>
+                                </a>
+                            </li>
+                            <li class="bg-yellow-500 hover:bg-yellow-600 h-12 w-12 rounded-full flex items-center justify-center shrink-0">
+                                <a href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" fill="#0F0F0F" class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                      </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-zinc-800 p-6 rounded-lg">
+                        <p class="text-lg font-semibold text-gray-200">Napisz do nas...</p>
+                        <form class="mt-8 space-y-4">
+                            <input type='text' placeholder='Imie i nazwisko'
+                                class="w-full rounded-md py-3 px-4 text-sm outline-darkgray" />
+                            <input type='email' placeholder='Email'
+                                class="w-full rounded-md py-3 px-4 text-sm outline-darkgray" />
+                            <input type='text' placeholder='Tytuł'
+                                class="w-full rounded-md py-3 px-4 text-sm outline-darkgray" />
+                            <textarea placeholder='Treść wiadomości...' rows="6"
+                                class="w-full rounded-md px-4 text-sm pt-3 outline-darkgray"></textarea>
+                            <button type='button'
+                                class="text-white bg-yellow-500 hover:bg-darkgray duration-200 font-semibold rounded-md text-sm px-4 py-3 flex items-center justify-center w-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2" viewBox="0 0 548.244 548.244">
+                                    <path fill-rule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clip-rule="evenodd" data-original="#000000" />
+                                </svg>
+                                Wyślij email
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex  p-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2052.3057427263893!2d17.869723234430413!3d52.28666231776824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704c5fd6caba093%3A0x1528502a05a5f901!2splac%20Wolno%C5%9Bci%203%2F4%2C%2062-400%20S%C5%82upca!5e0!3m2!1spl!2spl!4v1699221962236!5m2!1spl!2spl" width="100%" height="500" style="border: 0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-   
-    
-
-
-
-
-
+    <section id="footer">
+        <p class="text-center text-xs bg-darkgray text-gray-400 py-1">© 2023 RW/CONCEPT, All Rights Reserved. | Design: <a href="">MKujawaDev.pl</a></p>
+    </section>
 
 
 
@@ -334,12 +420,7 @@
 
         <!-- Swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-        <!-- LightGallery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
-            lightGallery(document.querySelector('.gallery'));
-        </script>
+        <script src="/js/swiper.js"></script>
 
         <!-- Awesome Icons -->
         <script src="https://kit.fontawesome.com/3fd4863eda.js" crossorigin="anonymous"></script>
