@@ -1,6 +1,5 @@
 html{
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 /* Loading screen */
@@ -223,6 +222,39 @@ swiper-slide img {
     height: 50%;
     object-fit: cover;
   }
+}
+
+
+
+/* Gradient icons style */
+.instagram-gradient{
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text;
+  transition: all .3s ease;
+  border-radius: 5px;
+}
+
+.instagram-gradient:hover{
+  background:linear-gradient(45deg, #fd1d1d, #e1306c, #c13584, #833ab4, #5851db, #405de6);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text;
+  transform: translateY(-4px);
+}
+
+.tiktok-gradient{
+  background:linear-gradient(90deg, #ff0050, #00f2ea);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text;
+  transition: all .3s ease;
+}
+
+.tiktok-gradient:hover{
+  background:linear-gradient(45deg, #00f2ea,#ff0050);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text;
+  transform: translateY(-4px);
+ 
 }
 
 

@@ -6,7 +6,7 @@ $(document).ready(function () {
   $(".nav-toggler").each(function (_, navToggler) {
     const target = $(navToggler).data("target");
     let isOpen = false; // State of navigation process
-    const mobileBreakpoint = 768; // Adjust this value based on your responsive design needs
+    const mobileBreakpoint = 1020; // Adjust this value based on your responsive design needs
 
     $(navToggler).on("click", function () {
       if (window.innerWidth < mobileBreakpoint) {
