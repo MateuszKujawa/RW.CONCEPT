@@ -1,11 +1,13 @@
 function xData() {
     const posts = [
         {
-            image: "../images/img/news/wystawa.jpg",
+            linkToNewsPage: "../dist/news.html#news1",
+            image: "../images/img/galery/4.11/1.jpg",
             title: "I wystawa miłośników motoryzacji organizowana przez R/W Concept.",
-            description: "Pierwsza w słupcy tego rodzaju wystawa motoryzacji na targowisku miejskim w słupcy!",
+            description: "Zorganizowaliśmy pierwszą przez nasz zespół wystawę samochodów i motocykli na targowisku miejskim w Słupcy. Wszystko to w szczytnym celu...",
         },
         {
+            linkToNewsPage: "../dist/news.html#news2",
             image: "../images/img/news/mikolajki.jpg",
             title: "Motoryzacyjne mikołajki w słupcy zorganizowane przez R/W Concept.",
             description: "Motoryzacyjne Mikołajki w Słupcy, zorganizowane przez R/W Concept, to niepowtarzalne wydarzenie, które zgromadziło miłośników motoryzacji w jednym miejscu, oferując emocjonujący dzień pełen unikalnych prezentacji pojazdów i atrakcji związanych z motoryzacją.",

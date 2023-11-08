@@ -19,16 +19,8 @@
     <!-- Icon's -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-    <!-- Slider CDN's -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-
-    <!-- Cards script defer -->
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-
-    <!-- Swiper JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- LightGallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css"/>
     
 </head>
 
@@ -98,69 +90,141 @@
                 <div class="w-full mx-auto text-center">
                     <h1 class="text-white text-5xl md:text-8xl font-poppins font-extrabold leading-normal">Wszystkie aktualności</h1>
                     <h3 class="text-gray-300 text-base md:text-xl font-poppins font-semibold leading-snug px-14 py-6">Zobacz wszystko co zrobiliśmy do tej pory...</h3>
-                    <a href="#main" class="block w-fit mx-auto mt-24 text-white px-8 py-2 text-xl font-raleway font-semibold rounded-lg border border-yellow-500 hover:bg-yellow-500 hover:text-darkgray duration-300">Przejdź dalej</a>
+                    <a href="#news1" class="block w-fit mx-auto mt-24 text-white px-8 py-2 text-xl font-raleway font-semibold rounded-lg border border-yellow-500 hover:bg-yellow-500 hover:text-darkgray duration-300">Przejdź dalej</a>
                 </div>
             </div>
         </header>
 
-        <main id="main" class="h-full w-full bg-darkgray flex-col">
+        <main id="main" class="h-full w-full bg-[#0f0f0f] flex-col">
 
             <!-- 
                 INFO:
                 - Przy dodawaniu kolejnych artykułów należy zmienić numer w "id-content-text-[nr]".
                 - Zmienić również numer w "id-content-btn-[nr]"
+                - Dodać numer w id gallery np: "gallery3"
              -->
 
 
             <!-- Artykuł początek -->
+                <div class="max-w-screen-lg mx-auto flex flex-col lg:flex-row pt-10 px-2 md:px-10 py-10 scroll-mt-[70px]" id="news1">
 
-            <div class="max-w-screen-lg mx-auto shadow-md flex flex-col lg:flex-row pt-10 px-2 md:px-10 py-10">
+                    <!-- Left site -->
+                    <div class="w-full lg:w-2/12 text-center mb-5 md:mb-0">
+                        <div class="w-24 h-24 md:w-28 md:h-28 border-2 border-gray-400 rounded-lg font-semibold flex-col items-center justify-center text-center py-2">
+                            <div class="text-white font-bold text-lg md:text-2xl">4</div>
+                            <div class=" text-gray-100 text-base md:text-xl">Listopad</div>
+                            <div class="text-gray-100 text-base md:text-xl">2023</div>
+                        </div>
+                    </div>
+            
+                    <!-- Right site -->
+                    <div class="bg-[#1d1d1d] w-full lg:w-10/12 border-2 border-zinc-900 shadow-xl shadow-black p-4 rounded-lg">
+
+                        <div class="lg:flex">
+                            <!-- Post image -->
+                            <div class="lg:w-6/12">
+                                <img src="/images/img/galery/4.11/1.jpg" class="w-full h-auto rounded-sm border-2 border-gray-300">
+                            </div>
+
+                            <!-- Title div + short text -->
+                            <div class="lg:w-6/12 md:pl-4 mt-4 md:mt-0">
+                                <h1 class="text-lg md:text-xl font-semibold text-yellow-500 border-b-2 border-gray-400 pb-2">1 Wystawa miłośników motoryzacji w Słupcy, organizowanej przez R/W Concept.</h1>
+                                <p class="mt-2 text-white text-left text-base md:text-lg">
+                                    Zorganizowaliśmy pierwszą przez nasz zespół wystawę samochodów i motocykli na targowisku miejskim w Słupcy. Wszystko to w szczytnym celu...
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Long text -->
+                        <p class="longText px-4 md:px-0 py-2 md:py-4 md:ml-2 text-white text-left" id="content-text-1" style="display: none;">
+                            W sobotę 4 Listopada mogliśmy podziwiać prawdziwe perełki, samochody starsze, nowsze jak również motocykle. Mimo tego, że sezon jest zakończony postanowiliśmy zorganizować taką wystawę żeby mieszkańcy naszego regionu mogli pokazać swoje wozy, a także zachęcić ich do zainteresowania się motoryzacją. Na miejscu można było wziąść udział w konkuras z nagrodami oraz inne atrakcje. Została również zorganizowana zbiórka charytatywna dla małej Zuzi, u której zdiagnozowano autyzm. Chodziło o zakup tabletu z programem do alternatywnej komunikacji. Ponadtwo na miejscu zbierana była karma dla zwierząt, która została przekazana do schroniska w Katarzynowie. Zachęcamy również do wpłacania na <a href="https://zrzutka.pl/wyxexm?utm_medium=social&utm_source=messenger&utm_campaign=sharing_button" class="text-yellow-500 border-b border-1 border-yellow-500">zbiórkę dla Zuzi.</a>
+                        </p>
+
+                        <!-- Open full text btn -->
+                        <div class="w-full flex items-end justify-end mt-4">
+                            <button id="content-btn-1" class="text-yellow-500 border-2 border-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-darkgray duration-300">Czytaj dalej...</button>
+                        </div>
+
+                        <!-- Small gallery -->
+                        <div id="gallery1" class="flex mt-4">
+                            <a href="/images/img/galery/4.11/1.jpg" class="w-[200px] p-2">
+                                <img src="/images/img/galery/4.11/1.jpg" class="rounded-sm hover:scale-110 duration-300">
+                            </a>
+                            <a href="/images/img/galery/4.11/2.jpg" class="w-[200px] p-2">
+                                <img src="/images/img/galery/4.11/2.jpg" class="rounded-sm hover:scale-110 duration-300">
+                            </a>
+                            <a href="/images/img/galery/4.11/3.jpg" class="w-[200px] p-2">
+                                <img src="/images/img/galery/4.11/3.jpg" class="rounded-sm hover:scale-110 duration-300">
+                            </a>
+                            <a href="/images/img/galery/4.11/4.jpg" class="w-[200px] p-2">
+                                <img src="/images/img/galery/4.11/4.jpg" class="rounded-sm hover:scale-110 duration-300">
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+            <!-- ******** Artykuł koniec ******** -->
+
+
+
+            <!-- Artykuł początek -->
+            <div class="max-w-screen-lg mx-auto flex flex-col lg:flex-row pt-10 px-2 md:px-10 py-10 scroll-mt-[70px]" id="news2">
 
                 <!-- Left site -->
                 <div class="w-full lg:w-2/12 text-center mb-5 md:mb-0">
-                    <div class="w-28 h-28 border-2 border-gray-400 rounded-lg font-semibold flex-col items-center justify-center text-center py-2">
-                        <div class="text-white font-bold text-2xl">8</div>
-                        <div class=" text-gray-100 text-xl">Listopad</div>
-                        <div class="text-gray-100 text-xl">2023</div>
+                    <div class="w-24 h-24 md:w-28 md:h-28 border-2 border-gray-400 rounded-lg font-semibold flex-col items-center justify-center text-center py-2">
+                        <div class="text-white font-bold text-lg md:text-2xl">9</div>
+                        <div class=" text-gray-100 text-base md:text-xl">Grudzień</div>
+                        <div class="text-gray-100 text-base md:text-xl">2023</div>
                     </div>
                 </div>
         
                 <!-- Right site -->
-                <div class="w-full lg:w-10/12 border-2 border-gray-400 px-4 py-4 rounded-lg">
-                    <div class="lg:flex">
+                <div class="bg-[#1d1d1d] w-full lg:w-10/12 border-2 border-zinc-900 shadow-xl shadow-black p-4 rounded-lg">
 
+                    <div class="lg:flex">
                         <!-- Post image -->
                         <div class="lg:w-6/12">
-                            <img src="/images/img/galery/img1.jpg" alt="Kino samochodowe" class="w-full h-auto rounded-sm">
+                            <img src="/images/img/news/mikolajki.jpg" class="w-full h-auto rounded-sm border-2 border-gray-300">
                         </div>
 
                         <!-- Title div + short text -->
-                        <div class="lg:w-6/12 pl-4 mt-10 md:mt-0">
-                            <h1 class="text-xl font-semibold text-yellow-500 border-b-2 border-gray-400 pb-2">Kino samochodowe otwarte przez R/W Concept!</h1>
-                            <p class="mt-2 text-white text-left">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac urna vel justo bibendum congue vel non ligula.Dolorum dolore iusto nobis exercitationem quasi, perferendis tempora voluptatem veritatis delectus modi!
+                        <div class="lg:w-6/12 md:pl-4 mt-4 md:mt-0">
+                            <h1 class="text-lg md:text-xl font-semibold text-yellow-500 border-b-2 border-gray-400 pb-2">Moto mikołjaki - R/W Concept</h1>
+                            <p class="mt-2 text-white text-left text-base md:text-lg">
+                                Słupeckie motomikołajki czyli mikołaj zamienia renifery na konie mechaniczne.
+                                Niesamowite samochody i dużo usmiechów najmłodszych fanów motoryzacji - Słupca.
                             </p>
                         </div>
                     </div>
 
-
                     <!-- Long text -->
-                    <p class="longText px-4 md:px-0 py-2 md:py-4 md:ml-2 text-white text-left" id="content-text-1" style="display: none;">
-                        Nullam ac urna vel justo bibendum congue vel non ligula.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolore iusto nobis exercitationem quasi, perferendis tempora voluptatem veritatis delectus modi!
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac urna vel justo bibendum congue vel non ligula.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolore iusto nobis exercitationem quasi, perferendis tempora voluptatem veritatis delectus modi!
+                    <p class="longText px-4 md:px-0 py-2 md:py-4 md:ml-2 text-white text-left" id="content-text-2" style="display: none;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, deserunt facere? Sed architecto dolores a repellat, laboriosam consequuntur beatae itaque sit dicta vel ut iusto cumque quaerat, alias doloribus! Quidem corporis voluptatum nam, fugit magni ipsum exercitationem. Reprehenderit quo beatae atque animi, veniam possimus cupiditate nulla. Facilis error vel praesentium?
                     </p>
 
                     <!-- Open full text btn -->
                     <div class="w-full flex items-end justify-end mt-4">
-                        <button id="content-btn-1" class="text-yellow-500 border-2 border-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-darkgray duration-300">Czytaj dalej...</button>
+                        <button id="content-btn-2" class="text-yellow-500 border-2 border-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-darkgray duration-300">Czytaj dalej...</button>
+                    </div>
+
+                    <!-- Small gallery -->
+                    <div id="gallery2" class="flex mt-4">
+                        <a href="/images/img/galery/4.11/1.jpg" class="w-[200px] p-2">
+                            <img src="/images/img/galery/4.11/1.jpg" class="rounded-sm hover:scale-110 duration-300">
+                        </a>
+                        <a href="/images/img/galery/4.11/2.jpg" class="w-[200px] p-2">
+                            <img src="/images/img/galery/4.11/2.jpg" class="rounded-sm hover:scale-110 duration-300">
+                        </a>
+                        <a href="/images/img/galery/4.11/3.jpg" class="w-[200px] p-2">
+                            <img src="/images/img/galery/4.11/3.jpg" class="rounded-sm hover:scale-110 duration-300">
+                        </a>
+                        <a href="/images/img/galery/4.11/4.jpg" class="w-[200px] p-2">
+                            <img src="/images/img/galery/4.11/4.jpg" class="rounded-sm hover:scale-110 duration-300">
+                        </a>
                     </div>    
                 </div>
             </div>
-            <!-- ******** Artykuł koniec ******** -->
-
-            
+        <!-- ******** Artykuł koniec ******** -->
 
 
         </main>
@@ -259,6 +323,28 @@
 
 
     <!-- Scripts -->
+        <!-- Light Gallery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+        <script>
+            function setupGallery(galleryId) {
+            const gallery = document.getElementById(galleryId);
+            if (!gallery) {
+                console.error(`Gallery with id '${galleryId}' not found.`);
+                return;
+            }
+
+            lightGallery(gallery, {
+                controls: true,
+                counter: true,
+                download: false,
+            });
+            }
+
+            // Wywołanie funkcji setupGallery dla różnych galerii na stronie
+            setupGallery('gallery1');
+            setupGallery('gallery2');
+            // Dodaj więcej galerii według potrzeby
+        </script>
 
         <!-- Loading Page Script -->
         <script src="/js/loading.js"></script>

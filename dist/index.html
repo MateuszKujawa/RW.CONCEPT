@@ -181,18 +181,14 @@
         
     
         <section x-data="xData()" class="h-fit bg-yellow-500 py-20 scroll-mt-[45px] -z-10" id="news">
-    
-    
             <h1 class="text-yellow-500 font-raleway font-extrabold uppercase text-4xl md:text-7xl py-4 px-4 bg-darkgray w-fit text-center">Aktualności</h1>
-    
+        
             <!-- Card Grid -->
             <div class="mt-10 px-4">
                 <div class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     <template x-for="post in posts">
-                        <!-- Card Item -->
-                        <div class="card my-8 rounded shadow-lg shadow-gray-900 bg-darkgray duration-300 hover:-translate-y-2"
-                            x-for="(post, index) in posts">
-                            <!-- Clickable Area -->
+                        <!-- Card Item (Clickable) -->
+                        <a :href="post.linkToNewsPage" class="card my-8 rounded shadow-lg shadow-gray-900 bg-darkgray duration-300 hover:-translate-y-2">
                             <div>
                                 <figure>
                                     <!-- Image -->
@@ -200,29 +196,25 @@
         
                                     <figcaption class="p-4">
                                         <!-- Title -->
-                                        <p class="text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300" x-text="post.title">
-                                            <!-- Post Title -->
-                                        </p>
+                                        <p class="text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300" x-text="post.title"></p>
         
                                         <!-- Description -->
-                                        <small class="leading-5 text-gray-500 dark:text-gray-400" x-text="post.description">
-                                            <!-- Post Description -->
-                                        </small>
+                                        <small class="leading-5 text-gray-500 dark:text-gray-400" x-text="post.description"></small>
                                     </figcaption>
                                 </figure>
                             </div>
-                        </div>
+                        </a>
                     </template>
                 </div>
-            
+        
                 <div class="w-full mx-auto text-center mt-10">
                     <a href="/dist/news.html" class="relative inline-flex items-center justify-center p-4 px-10 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-darkgray rounded-md shadow-md group">
                         <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-darkgray group-hover:translate-x-0 ease">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </span>
                         <span class="absolute flex items-center justify-center w-full h-full text-darkgray text-xl transition-all duration-300 transform group-hover:translate-x-full ease">Wszystkie aktualności</span>
                         <span class="relative invisible">Wszystkie aktualności</span>
-                        </a>
+                    </a>
                 </div>
             </div>
         </section>
@@ -232,88 +224,38 @@
     
             <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true" pagination="true">
                 <swiper-slide>
-                    <img src="/images/img/galery/img1.jpg" />
+                    <img src="/images/img/galery/4.11/1.jpg" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="/images/img/galery/img2.jpg" />
+                    <img src="/images/img/galery/4.11/2.jpg" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="/images/img/galery/img3.jpg" />
+                    <img src="/images/img/galery/4.11/3.jpg" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="/images/img/galery/img4.webp" />
+                    <img src="/images/img/galery/4.11/4.jpg" />
                 </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img5.jpeg" />
-                </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img6.jpg" />
-                </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img2.jpg" />
-                </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img4.webp" />
-                </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img1.jpg" />
-                </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img6.jpg" />
-                </swiper-slide>
-    
             </swiper-container>
     
             <swiper-container class="mySwiper2 z-30" loop="true" space-between="10" slides-per-view="4" free-mode="true" watch-slides-progress="true">
                 <swiper-slide>
-                    <img src="/images/img/galery/img1.jpg" />
+                    <img src="/images/img/galery/4.11/1.jpg" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="/images/img/galery/img2.jpg" />
+                    <img src="/images/img/galery/4.11/2.jpg" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="/images/img/galery/img3.jpg" />
+                    <img src="/images/img/galery/4.11/3.jpg" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="/images/img/galery/img4.webp" />
+                    <img src="/images/img/galery/4.11/4.jpg" />
                 </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img5.jpeg" />
-                </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img6.jpg" />
-                </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img2.jpg" />
-                </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img4.webp" />
-                </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img1.jpg" />
-                </swiper-slide>
-    
-                <swiper-slide>
-                    <img src="/images/img/galery/img6.jpg" />
-                </swiper-slide>
-    
             </swiper-container>
     
         </section>
