@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aktualności | R/W Concept</title>
     <!-- style css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="../dist/style.css">
     <!-- font's -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,15 +25,15 @@
 
 <body>
     <div id="loading-overlay">
-        <img src="/images/loading.gif" alt="Ładowanie..." id="loading-gif">
+        <img src="../images/loading.gif" alt="Ładowanie..." id="loading-gif">
         <p class="btn-shine" target="_blank">Trwa ładowanie strony...</p>
     </div>
 
 
 <div id="page-content" style="display: none;">
         <nav class="fixed flex items-center bg-darkgray p-3 flex-wrap w-full z-40">
-            <a href="#" class="mr-4 inline-flex items-center">
-                <img src="/images/logo/logo-small.webp" alt="logo rw.concept" class="w-14">
+            <a href="../dist/index.html" class="mr-4 inline-flex items-center">
+                <img src="../images/logo/logo-small.webp" alt="logo rw.concept" class="w-14">
             </a>
     
             <button class="text-white inline-flex rounded lg:hidden ml-auto outline-none nav-toggler" data-target="#navigation" id="navButton">
@@ -44,23 +43,23 @@
             <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto h-[100vh] md:h-auto" id="navigation">
                 <div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto mt-10 lg:mt-0 border-t-2 border-yellow-700 lg:border-t-0">
                     
-                    <a href="/dist/index.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-semibold font-raleway uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mt-4 lg:mt-0 mr-2">
+                    <a href="../dist/index.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-semibold font-raleway uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mt-4 lg:mt-0 mr-2">
                         <span>Strona główna</span>
                     </a>
     
-                    <a href="/dist/index.html#partners" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
+                    <a href="../dist/index.html#partners" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
                         <span>Partnerzy</span>
                     </a>
     
-                    <a href="/dist/index.html#aboutus" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
+                    <a href="../dist/index.html#aboutus" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover:bg-yellow-500 hover:text-darkgray duration-300 mr-2">
                         <span>O nas</span>
                     </a>
     
-                    <a href="/dist/news.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow-500 font-raleway font-medium uppercase items-center justify-center hover-bg-yellow-500 hover:text-darkgray hover:bg-yellow-500 duration-300 mr-2">
+                    <a href="../dist/news.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow-500 font-raleway font-medium uppercase items-center justify-center hover-bg-yellow-500 hover:text-darkgray hover:bg-yellow-500 duration-300 mr-2">
                         <span>Aktualności</span>
                     </a>
     
-                    <a href="/dist/index.html#gallery" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover-bg-yellow-500 hover:text-darkgray hover:bg-yellow-500 duration-300 mr-2">
+                    <a href="../dist/index.html#gallery" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover-bg-yellow-500 hover:text-darkgray hover:bg-yellow-500 duration-300 mr-2">
                         <span>Galeria</span>
                     </a>
     
@@ -85,7 +84,7 @@
             </div>
         </nav>
     
-        <header class="relative items-center justify-center overflow-hidden h-screen z-10 bg-[url(/images/img/by1.webp)] bg-no-repeat bg-cover">
+        <header class="relative items-center justify-center overflow-hidden h-screen z-10 bgnews-img bg-no-repeat bg-cover">
             <div class="w-full h-fit absolute top-[30%] left-0 ">
                 <div class="w-full mx-auto text-center">
                     <h1 class="text-white text-5xl md:text-8xl font-poppins font-extrabold leading-normal">Wszystkie aktualności</h1>
@@ -123,7 +122,7 @@
                         <div class="lg:flex">
                             <!-- Post image -->
                             <div class="lg:w-6/12">
-                                <img src="/images/img/galery/4.11/1.jpg" class="w-full h-auto rounded-sm border-2 border-gray-300">
+                                <img src="../images/img/galery/4.11/1.jpg" class="w-full h-auto rounded-sm border-2 border-gray-300">
                             </div>
 
                             <!-- Title div + short text -->
@@ -147,17 +146,17 @@
 
                         <!-- Small gallery -->
                         <div id="gallery1" class="flex mt-4">
-                            <a href="/images/img/galery/4.11/1.jpg" class="w-[200px] p-2">
-                                <img src="/images/img/galery/4.11/1.jpg" class="rounded-sm hover:scale-110 duration-300">
+                            <a href="../images/img/galery/4.11/1.jpg" class="w-[200px] p-2">
+                                <img src="../images/img/galery/4.11/1.jpg" class="rounded-sm hover:scale-110 duration-300">
                             </a>
-                            <a href="/images/img/galery/4.11/2.jpg" class="w-[200px] p-2">
-                                <img src="/images/img/galery/4.11/2.jpg" class="rounded-sm hover:scale-110 duration-300">
+                            <a href="../images/img/galery/4.11/2.jpg" class="w-[200px] p-2">
+                                <img src="../images/img/galery/4.11/2.jpg" class="rounded-sm hover:scale-110 duration-300">
                             </a>
-                            <a href="/images/img/galery/4.11/3.jpg" class="w-[200px] p-2">
-                                <img src="/images/img/galery/4.11/3.jpg" class="rounded-sm hover:scale-110 duration-300">
+                            <a href="../images/img/galery/4.11/3.jpg" class="w-[200px] p-2">
+                                <img src="../images/img/galery/4.11/3.jpg" class="rounded-sm hover:scale-110 duration-300">
                             </a>
-                            <a href="/images/img/galery/4.11/4.jpg" class="w-[200px] p-2">
-                                <img src="/images/img/galery/4.11/4.jpg" class="rounded-sm hover:scale-110 duration-300">
+                            <a href="../images/img/galery/4.11/4.jpg" class="w-[200px] p-2">
+                                <img src="../images/img/galery/4.11/4.jpg" class="rounded-sm hover:scale-110 duration-300">
                             </a>
                         </div>    
                     </div>
@@ -184,7 +183,7 @@
                     <div class="lg:flex">
                         <!-- Post image -->
                         <div class="lg:w-6/12">
-                            <img src="/images/img/news/mikolajki.jpg" class="w-full h-auto rounded-sm border-2 border-gray-300">
+                            <img src="../images/img/news/mikolajki.jpg" class="w-full h-auto rounded-sm border-2 border-gray-300">
                         </div>
 
                         <!-- Title div + short text -->
@@ -209,17 +208,17 @@
 
                     <!-- Small gallery -->
                     <div id="gallery2" class="flex mt-4">
-                        <a href="/images/img/galery/4.11/1.jpg" class="w-[200px] p-2">
-                            <img src="/images/img/galery/4.11/1.jpg" class="rounded-sm hover:scale-110 duration-300">
+                        <a href="../images/img/galery/4.11/1.jpg" class="w-[200px] p-2">
+                            <img src="../images/img/galery/4.11/1.jpg" class="rounded-sm hover:scale-110 duration-300">
                         </a>
-                        <a href="/images/img/galery/4.11/2.jpg" class="w-[200px] p-2">
-                            <img src="/images/img/galery/4.11/2.jpg" class="rounded-sm hover:scale-110 duration-300">
+                        <a href="../images/img/galery/4.11/2.jpg" class="w-[200px] p-2">
+                            <img src="../images/img/galery/4.11/2.jpg" class="rounded-sm hover:scale-110 duration-300">
                         </a>
-                        <a href="/images/img/galery/4.11/3.jpg" class="w-[200px] p-2">
-                            <img src="/images/img/galery/4.11/3.jpg" class="rounded-sm hover:scale-110 duration-300">
+                        <a href="../images/img/galery/4.11/3.jpg" class="w-[200px] p-2">
+                            <img src="../images/img/galery/4.11/3.jpg" class="rounded-sm hover:scale-110 duration-300">
                         </a>
-                        <a href="/images/img/galery/4.11/4.jpg" class="w-[200px] p-2">
-                            <img src="/images/img/galery/4.11/4.jpg" class="rounded-sm hover:scale-110 duration-300">
+                        <a href="../images/img/galery/4.11/4.jpg" class="w-[200px] p-2">
+                            <img src="../images/img/galery/4.11/4.jpg" class="rounded-sm hover:scale-110 duration-300">
                         </a>
                     </div>    
                 </div>
@@ -347,23 +346,23 @@
         </script>
 
         <!-- Loading Page Script -->
-        <script src="/js/loading.js"></script>
+        <script src="../js/loading.js"></script>
 
         <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <!-- Menu -->
-        <script src="/js/menu.js"></script>
+        <script src="../js/menu.js"></script>
 
         <!-- Dropdown menu -->
-        <script src="/js/dropdown.js"></script>
+        <script src="../js/dropdown.js"></script>
 
         <!-- Show/hide text script -->
-        <script src="/js/textShow.js"></script>
+        <script src="../js/textShow.js"></script>
 
         <!-- SmtpJS Mail sender -->
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="/js/mailsender.js"></script>
+        <script src="../js/mailsender.js"></script>
 
         <!-- Awesome Icons -->
         <script src="https://kit.fontawesome.com/3fd4863eda.js" crossorigin="anonymous"></script>
