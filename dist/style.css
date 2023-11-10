@@ -93,7 +93,7 @@ body.loading {
 /* Dla dużych ekranów (powyżej md - medium) */
 
 .bg-image {
-  background-image: url('../images/img/galery/img1.jpg');
+  background-image: url('./images/img/galery/img1.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -250,11 +250,11 @@ swiper-slide img {
 }
 
 .bgnews-img{
-  background-image: url(../images/img/by1.webp);
+  background-image: url(./images/img/by1.webp);
 }
 
 .bgimg-gallery{
-  background-image: url(../images/img/by2.webp);
+  background-image: url(./images/img/by2.webp);
 }
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
