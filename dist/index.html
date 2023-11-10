@@ -33,7 +33,7 @@
 
 <body>
     <div id="loading-overlay">
-        <img src="./images/loading.gif" alt="Ładowanie..." id="loading-gif">
+        <img src="./images/icons/loading.gif" alt="Ładowanie..." id="loading-gif">
         <p class="btn-shine" target="_blank">Trwa ładowanie strony...</p>
     </div>
 
@@ -41,7 +41,7 @@
 <div id="page-content" style="display: none;">
         <nav class="fixed flex items-center bg-darkgray p-3 flex-wrap w-full z-40">
             <a href="index.html" class="mr-4 inline-flex items-center">
-                <img src="./images/logo/logo-small.webp" alt="logo rw.concept" class="w-14">
+                <img src="./images/icons/logo-small.webp" alt="logo rw.concept" class="w-14">
             </a>
     
             <button class="text-white inline-flex rounded lg:hidden ml-auto outline-none nav-toggler" data-target="#navigation" id="navButton">
@@ -94,16 +94,16 @@
     
           <header class="relative items-center justify-center  overflow-hidden h-screen z-10">
             <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0">
-                <source src="./images/img/Video_RWCONCEPT.mp4" type="video/mp4" />Your browser does not support the video tag.
+                <source src="./images/backgrounds/Video_RWCONCEPT.mp4" type="video/mp4" />Your browser does not support the video tag.
             </video>
     
             <div class="w-full h-fit absolute top-[20%] md:top-[20%] left-0">
                 <div class="w-full px-8 mx-auto text-center">
-                    <img src="./images/logo/logo-small.webp" alt="" class="flex mx-auto">
+                    <img src="./images/icons/logo-small.webp" class="flex mx-auto">
                     <div class="h-0.5 w-1/2 mx-auto bg-yellow-500 rotate-3 mt-10 mb-4 md:mb-10"></div>
                     <h2 class="text-white font-poppins font-thin uppercase text-xl md:text-3xl rotate-3">Wpadnij do nas!</h2>
     
-                    <a href="#partners" class="relative items-center justify-start inline-block px-16 py-3 overflow-hidden font-bold rounded-full group mt-[25%] md:mt-[10%] hover:scale-110 duration-300">
+                    <a href="#partners" class="relative items-center justify-start inline-block px-16 py-3 overflow-hidden font-bold rounded-full mt-24 md:mt-20 hover:scale-110 duration-300">
                         <span class="w-32 h-32 rotate-45 translate-x-2 -translate-y-2 absolute left-0 top-0 bg-white opacity-0"></span>
                         <span class="absolute top-0 left-0 w-52 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-yellow-500 opacity-100 group-hover:-translate-x-2"></span>
                         <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900 uppercase">Przejdź dalej</span>
@@ -223,37 +223,45 @@
     
             <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true" pagination="true">
                 <swiper-slide>
-                    <img src="./images/img/galery/4.11/1.jpg" />
+                    <img src="./images/gallery/4.11/1.webp" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="./images/img/galery/4.11/2.jpg" />
+                    <img src="./images/gallery/4.11/2.webp" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="./images/img/galery/4.11/3.jpg" />
+                    <img src="./images/gallery/4.11/3.webp" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="./images/img/galery/4.11/4.jpg" />
+                    <img src="./images/gallery/4.11/4.webp" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img src="./images/gallery/4.11/5.webp" />
                 </swiper-slide>
             </swiper-container>
     
             <swiper-container class="mySwiper2 z-30" loop="true" space-between="10" slides-per-view="4" free-mode="true" watch-slides-progress="true">
                 <swiper-slide>
-                    <img src="./images/img/galery/4.11/1.jpg" />
+                    <img src="./images/gallery/4.11/1.webp" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="./images/img/galery/4.11/2.jpg" />
+                    <img src="./images/gallery/4.11/2.webp" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="./images/img/galery/4.11/3.jpg" />
+                    <img src="./images/gallery/4.11/3.webp" />
                 </swiper-slide>
     
                 <swiper-slide>
-                    <img src="./images/img/galery/4.11/4.jpg" />
+                    <img src="./images/gallery/4.11/4.webp" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img src="./images/gallery/4.11/5.webp" />
                 </swiper-slide>
             </swiper-container>
     
@@ -266,7 +274,7 @@
                         <div>
                             <h1 class="text-4xl font-extrabold text-white">Skontaktuj się z nami</h1>
                             <p class="text-sm text-gray-400 mt-3">Masz pytanie lub jesteś zainteresowany współpracą z nami? Napisz do nas a na pewno się odezwiemy!</p>
-                            <ul class="mt-12 space-y-8">
+                            <ul class="mt-12 space-y-4">
                                 <li class="flex items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='rgb(234 179 8)'
                                         viewBox="0 0 479.058 479.058">
@@ -274,16 +282,16 @@
                                             d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
                                             data-original="#000000" />
                                     </svg>
-                                    <a href="javascript:void(0)" class="text-white text-sm ml-3">
-                                        <strong>rwconcept@info.pl</strong>
+                                    <a href="javascript:void(0)" class="text-white text-base ml-3">
+                                        <strong>rwconcept.info@gmail.com</strong>
                                     </a>
                                 </li>
                                 <li class="flex items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='rgb(234 179 8)' viewBox="0 0 482.6 482.6">
                                         <path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z" data-original="#000000"></path>
                                     </svg>
-                                    <a href="javascript:void(0)" class="text-white text-sm ml-3">
-                                        <strong>+48 111 222 333</strong>
+                                    <a href="tel: 111-222-333" class="text-white text-base ml-3 hover:text-yellow-500 duration-300">
+                                        <strong>111 222 333</strong>
                                     </a>
                                 </li>
                                 <li class="flex items-center">
@@ -291,12 +299,26 @@
                                         <path d="M184.08 0c-74.992 0-136 61.008-136 136 0 24.688 11.072 51.24 11.536 52.36 3.576 8.488 10.632 21.672 15.72 29.4l93.248 141.288c3.816 5.792 9.464 9.112 15.496 9.112s11.68-3.32 15.496-9.104l93.256-141.296c5.096-7.728 12.144-20.912 15.72-29.4.464-1.112 11.528-27.664 11.528-52.36 0-74.992-61.008-136-136-136zM293.8 182.152c-3.192 7.608-9.76 19.872-14.328 26.8l-93.256 141.296c-1.84 2.792-2.424 2.792-4.264 0L88.696 208.952c-4.568-6.928-11.136-19.2-14.328-26.808-.136-.328-10.288-24.768-10.288-46.144 0-66.168 53.832-120 120-120s120 53.832 120 120c0 21.408-10.176 45.912-10.28 46.152z" data-original="#000000"></path>
                                         <path d="M184.08 64.008c-39.704 0-72 32.304-72 72s32.296 72 72 72 72-32.304 72-72-32.296-72-72-72zm0 128c-30.872 0-56-25.12-56-56s25.128-56 56-56 56 25.12 56 56-25.128 56-56 56z" data-original="#000000"></path>
                                     </svg>
-                                    <a href="javascript:void(0)" class="text-white text-sm ml-3">
+                                    <a href="#map" class="text-white text-base ml-3 hover:text-yellow-500 duration-300">
                                         <strong>Słupca, Plac Wolności 3/4</strong>
                                     </a>
                                 </li>
                             </ul>
                             
+                            <div class="mt-10">
+                                <h3 class="text-2xl text-gray-300 py-2">Godziny otwarcia:</h3>
+                                <ul class="text-white">
+                                    <li class="py-1">
+                                        Pon - Pt : <span class="text-yellow-500 font-semibold">9:00 - 17:00</span> 
+                                    </li>
+                                    <li class="py-1">
+                                        Sobota : <span class="text-yellow-500 font-semibold">9:00 - 17:00</span> 
+                                    </li>
+                                    <li class="py-1">
+                                        Niedziela : <span class="text-yellow-500 font-semibold">Zamknięte</span> 
+                                    </li>
+                                </ul>
+                            </div>
 
                             <div class="flex w-fit h-fit space-x-6 mt-10">
                                 <a href="https://www.facebook.com/ConceptRW?locale=pl_PL" class="text-2xl text-gray-400 hover:text-yellow-500 hover:-translate-y-1 duration-300 ease">
@@ -336,7 +358,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="flex  p-4">
+                    <div id="map" class="flex p-4">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2052.3057427263893!2d17.869723234430413!3d52.28666231776824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704c5fd6caba093%3A0x1528502a05a5f901!2splac%20Wolno%C5%9Bci%203%2F4%2C%2062-400%20S%C5%82upca!5e0!3m2!1spl!2spl!4v1699221962236!5m2!1spl!2spl" width="100%" height="500" style="border: 0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -369,8 +391,8 @@
         <script src="./js/dropdown.js"></script>
 
         <!-- Slider -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="./js/slider.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="./js/slider.js"></script>
 
         <!-- Swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>

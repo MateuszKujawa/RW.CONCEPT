@@ -88,18 +88,18 @@ body.loading {
   border: 2px solid #2d2a25;
 }
 
+
+
+
 /* About us style */
 
-/* Dla dużych ekranów (powyżej md - medium) */
-
 .bg-image {
-  background-image: url('./images/img/galery/img1.jpg');
+  background-image: url('./images/backgrounds/bg-about.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  /* 100% wysokości */
 }
 
 .bg-image::before {
@@ -110,7 +110,6 @@ body.loading {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
-  /* Przyciemnienie */
 }
 
 .image-container {
@@ -133,7 +132,6 @@ body.loading {
 
 .text-white {
   color: white;
-  /* Kolor jasnego tekstu */
 }
 
 @media (max-width: 768px) {
@@ -142,7 +140,7 @@ body.loading {
   }
 
   .bg-image{
-    height: 30vh;
+    height: 35vh;
   }
 
   .text-container{
@@ -151,8 +149,17 @@ body.loading {
   }
 }
 
-/* Swiper */
 
+
+
+
+
+
+
+
+
+
+/* Swiper */
 swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -194,27 +201,24 @@ swiper-slide img {
      object-fit: cover;
 }
 
-/* Dla tabletów (np. landscape mode) */
 
+/* For tablet's*/
 @media screen and (max-width: 1024px) {
   .swiper-container {
     width: 90%;
-    /* Dostosowanie szerokości */
   }
 
   .mySwiper {
     width: 90%;
-    /* Dostosowanie szerokości */
   }
 
   .mySwiper2 {
     height: 15%;
-    /* Dostosowanie wysokości */
     width: 90%;
   }
 }
 
-/* Dla urządzeń mobilnych (np. telefony) */
+/* For mobile */
 
 @media screen and (max-width: 768px) {
   .swiper-container {
@@ -231,13 +235,11 @@ swiper-slide img {
 
   .mySwiper2 {
     height: 25%;
-    /* Dostosowanie wysokości */
     width: 95%;
   }
 
   .mySwiper2 .swiper-slide {
     width: 50%;
-    /* Dostosowanie szerokości */
   }
 
   swiper-slide img {
@@ -249,14 +251,22 @@ swiper-slide img {
   }
 }
 
+
+
+
+
+/* Background's images */
 .bgnews-img{
-  background-image: url(./images/img/by1.webp);
+  background-image: url(./images/backgrounds/by1.webp);
 }
 
 .bgimg-gallery{
-  background-image: url(./images/img/by2.webp);
+  background-image: url(./images/backgrounds/by2.webp);
 }
 
+.big-logo{
+  background-image: url(./images/icons/logo-small.webp);
+}
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
