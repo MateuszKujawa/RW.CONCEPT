@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona główna | R/W Concept</title>
+
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
+
     <!-- font's -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +17,6 @@
             font-family: 'Raleway', sans-serif;
             font-family: 'Roboto', sans-serif;
     -->
-    <!-- Icon's -->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
     <!-- Slider CDN's -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -25,9 +25,12 @@
     <!-- Cards script defer -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     
 </head>
 
@@ -103,12 +106,15 @@
                     <div class="h-0.5 w-1/2 mx-auto bg-yellow-500 rotate-3 mt-10 mb-4 md:mb-10"></div>
                     <h2 class="text-white font-poppins font-thin uppercase text-xl md:text-3xl rotate-3">Wpadnij do nas!</h2>
     
-                    <a href="#partners" class="relative items-center justify-start inline-block px-16 py-3 overflow-hidden font-bold rounded-full mt-24 md:mt-20 hover:scale-110 duration-300">
-                        <span class="w-32 h-32 rotate-45 translate-x-2 -translate-y-2 absolute left-0 top-0 bg-white opacity-0"></span>
-                        <span class="absolute top-0 left-0 w-52 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-yellow-500 opacity-100 group-hover:-translate-x-2"></span>
-                        <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900 uppercase">Przejdź dalej</span>
-                        <span class="absolute inset-0 border-2 border-yellow-500 rounded-full"></span>
-                        </a>
+                    <a href="#partners" class="relative inline-flex items-center justify-center p-4 px-14 py-3 overflow-hidden font-medium text-white bg-darkgray transition duration-300 ease-out border-gray-950 border rounded-full shadow-md group mt-24">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-darkgray duration-300 -translate-y-full bg-yellow-500 group-hover:translate-y-0 ease">
+                            <svg class="w-6 h-6 transform " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7 7m0 0l7-7m-7 7v-14"></path>
+                            </svg>
+                        </span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-yellow-500 font-roboto text-xl transition-all duration-300 transform group-hover:translate-y-full ease">PRZEJDŹ DALEJ</span>
+                        <span class="relative invisible font-roboto">PRZEJDŹ DALEJ</span>
+                    </a>
                 </div>
             </div>
         </header>
@@ -375,9 +381,7 @@
 
 
     <!-- Scripts -->
-        <!-- Main scripts -->
-        <script src="./js/main.js"></script>
-
+        
         <!-- Loading Page Script -->
         <script src="./js/loading.js"></script>
 
