@@ -3,20 +3,20 @@ $(document).ready(function () {
     owl.owlCarousel({
         rtl: false,
         loop: true,
-        margin: 10,
+        margin: 15,
         autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         smartSpeed: 2000,
         responsive: {
             0: {
-                items: 3
+                items: 4
             },
             768: {
                 items: 5
             },
             992: {
-                items: 8
+                items: 10
             }
         }
     });

@@ -8,6 +8,12 @@ window.addEventListener('load', function() {
     loadingOverlay.style.display = 'none'; // Ukryj animację ładowania
     pageContent.style.display = 'block'; // Wyświetl zawartość strony
     document.body.classList.remove('loading'); // Odblokuj scrollowanie
+
+    AOS.init({
+        disable: 'mobile',
+        duration: 1000,
+        easing: 'ease', 
+    });
 });
 
 
