@@ -3,6 +3,7 @@ $(document).ready(function () {
     const dropdownMenu = $("#productsDropdown");
     dropdownMenu.toggleClass("active");
   });
+  
   $(".nav-toggler").each(function (_, navToggler) {
     const target = $(navToggler).data("target");
     let isOpen = false; // State of navigation process
@@ -27,7 +28,7 @@ $(document).ready(function () {
     });
 
     // Add click event handling for links in navigation
-    $("#navigation").on("click", function () {
+    $("#navigation a").on("click", function () {
       if (window.innerWidth < mobileBreakpoint) {
         // Hide nav after click event in link only on mobile devices
         $(target).slideUp();
@@ -36,5 +37,18 @@ $(document).ready(function () {
         isOpen = false; // Set state nav on close
       }
     });
+  });
+
+  // Add click event handling for links in the dropdown
+  $("#productsDropdown a").on("click", function () {
+    const target = $(".nav-toggler").data("target");
+    
+    if (window.innerWidth < mobileBreakpoint) {
+      // Hide nav after click event in link only on mobile devices
+      $(target).slideUp();
+      // Toggle nav icon on "hamburger"
+      $(".nav-toggler").html('<i class="fa-solid fa-bars text-white p-3 text-3xl hover:text-yellow-500 duration-300"></i>');
+      isOpen = false; // Set state nav on close
+    }
   });
 });

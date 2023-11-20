@@ -52,7 +52,7 @@
                         <span>O nas</span>
                     </a>
     
-                    <a href="news.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow-500 font-raleway font-medium uppercase items-center justify-center hover-bg-yellow-500 hover:text-darkgray hover:bg-yellow-500 duration-300 mr-2">
+                    <a href="./index.html#news" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-center hover-bg-yellow-500 hover:text-darkgray hover:bg-yellow-500 duration-300 mr-2">
                         <span>Aktualności</span>
                     </a>
     
@@ -61,7 +61,7 @@
                     </a>
     
                     <div class="relative group w-full md:w-auto">
-                        <button class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-raleway font-medium uppercase items-center justify-between hover:bg-yellow-500 hover:text-darkgray duration-300 dropdown-button text-left" id="productsDropdownButton">
+                        <button class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow-500 font-raleway font-medium uppercase items-center justify-between hover:bg-yellow-500 hover:text-darkgray duration-300 dropdown-button text-left" id="productsDropdownButton">
                             <span>Sklep</span>
                             <i class="fa-solid fa-chevron-down text-current ml-2 transform rotate-0 duration-100"></i>
                         </button>
@@ -80,147 +80,198 @@
             </div>
         </nav>
         
-            <header class="items-center justify-center overflow-hidden h-screen z-10 bgnews-img bg-no-repeat bg-cover">
+            <header class="items-center justify-center overflow-hidden h-screen z-10 bg-darkgray">
                 <div class="flex justify-center items-center h-full">
                     <div class="text-center" data-aos="fade-up" data-aos-delay="400">
-                        <h1 class="text-white text-6xl font-poppins font-bold md:text-7xl">Wszystkie aktualności</h1>
-                        <h3 class="text-gray-300 text-base md:text-xl font-poppins font-semibold leading-snug px-14 py-6">Zobacz wszystko co zrobiliśmy do tej pory...</h3>
-                        <a href="#news1" class="block w-fit mx-auto mt-24 text-white px-8 py-2 text-xl font-raleway font-semibold rounded-lg border border-yellow-500 hover:bg-yellow-500 hover:text-darkgray duration-300">Zobacz aktualności</a>
+                        <h1 class="text-white text-6xl font-poppins font-bold md:text-7xl">Sklep online</h1>
+                        <h3 class="text-gray-300 text-base md:text-xl font-poppins font-semibold leading-snug px-14 py-6">RW/CONCEPT</h3>
+                        <a href="#howToBuy" class="block w-fit mx-auto mt-24 text-white px-8 py-2 text-xl font-raleway font-semibold rounded-lg border border-yellow-500 hover:bg-yellow-500 hover:text-darkgray duration-300">Przejdź dalej</a>
                     </div>
                 </div>
             </header>
 
-            <main id="main" class="h-full w-full bg-[#0f0f0f] flex-col">
 
-                <!-- 
-                    INFO:
-                    - Przy dodawaniu kolejnych artykułów należy zmienić numer w "id-content-text-[nr]".
-                    - Zmienić również numer w "id-content-btn-[nr]"
-                    - Dodać numer w id gallery np: "gallery3"
-                -->
-
-
-                <!-- Artykuł początek -->
-                    <div class="max-w-screen-lg mx-auto flex flex-col lg:flex-row pt-10 px-2 md:px-10 py-10 scroll-mt-[70px]" id="news1" data-aos="fade-down" data-aos-offset="300">
-
-                        <!-- Left site -->
-                        <div class="w-full lg:w-2/12 text-center mb-5 lg:mb-0">
-                            <div class="w-24 h-24 md:w-28 md:h-28 border-2 border-yellow-500 rounded-lg font-semibold flex-col items-center justify-center text-center py-2">
-                                <div class="text-white font-bold text-lg md:text-2xl">4</div>
-                                <div class=" text-gray-100 text-base md:text-xl">Listopad</div>
-                                <div class="text-gray-100 text-base md:text-xl">2023</div>
-                            </div>
-                        </div>
-                
-                        <!-- Right site -->
-                        <div class="bg-[#1d1d1d] w-full lg:w-10/12 border-2 border-zinc-900 shadow-xl shadow-black p-4 rounded-lg">
-
-                            <div class="lg:flex">
-                                <!-- Post image -->
-                                <div class="lg:w-6/12">
-                                    <img src="./images/gallery/4.11/1.webp" class="w-full h-auto rounded-sm border-2 border-gray-300">
-                                </div>
-
-                                <!-- Title div + short text -->
-                                <div class="lg:w-6/12 mt-4 md:mt-2 lg:ml-2 lg:mt-0">
-                                    <h1 class="text-lg md:text-xl font-semibold text-yellow-500 border-b-2 border-gray-400 pb-2">1 Wystawa miłośników motoryzacji w Słupcy, organizowanej przez R/W Concept.</h1>
-                                    <p class="text-white text-left text-base mt-2 md:mt-2">
-                                        Zorganizowaliśmy pierwszą przez nasz zespół wystawę samochodów i motocykli na targowisku miejskim w Słupcy. Wszystko to w szczytnym celu...
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Long text -->
-                            <p class="longText px-4 md:px-0 py-2 md:py-4 md:ml-2 text-white text-left" id="content-text-1" style="display: none;">
-                                W sobotę 4 Listopada mogliśmy podziwiać prawdziwe perełki, samochody starsze, nowsze jak również motocykle. Mimo tego, że sezon jest zakończony postanowiliśmy zorganizować taką wystawę żeby mieszkańcy naszego regionu mogli pokazać swoje wozy, a także zachęcić ich do zainteresowania się motoryzacją. Na miejscu można było wziąść udział w konkuras z nagrodami oraz inne atrakcje. Została również zorganizowana zbiórka charytatywna dla małej Zuzi, u której zdiagnozowano autyzm. Chodziło o zakup tabletu z programem do alternatywnej komunikacji. Ponadtwo na miejscu zbierana była karma dla zwierząt, która została przekazana do schroniska w Katarzynowie. Zachęcamy również do wpłacania na <a href="https://zrzutka.pl/wyxexm?utm_medium=social&utm_source=messenger&utm_campaign=sharing_button" class="text-yellow-500 border-b border-1 border-yellow-500">zbiórkę dla Zuzi.</a>
-                            </p>
-
-                            <!-- Open full text btn -->
-                            <div class="w-full flex items-end justify-end mt-4">
-                                <button id="content-btn-1" class="text-yellow-500 border-2 border-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-darkgray duration-300">Czytaj dalej...</button>
-                            </div>
-
-                            <!-- Small gallery -->
-                            <div id="gallery1" class="flex mt-4">
-                                <a href="./images/gallery/4.11/2.webp" class="w-[200px] p-2">
-                                    <img src="./images/gallery/4.11/2.webp" class="rounded-sm hover:scale-110 duration-300">
-                                </a>
-                                <a href="./images/gallery/4.11/3.webp" class="w-[200px] p-2">
-                                    <img src="./images/gallery/4.11/3.webp" class="rounded-sm hover:scale-110 duration-300">
-                                </a>
-                                <a href="./images/gallery/4.11/4.webp" class="w-[200px] p-2">
-                                    <img src="./images/gallery/4.11/4.webp" class="rounded-sm hover:scale-110 duration-300">
-                                </a>
-                                <a href="./images/gallery/4.11/5.webp" class="w-[200px] p-2">
-                                    <img src="./images/gallery/4.11/5.webp" class="rounded-sm hover:scale-110 duration-300">
-                                </a>
-                            </div>    
-                        </div>
-                    </div>
-                <!-- ******** Artykuł koniec ******** -->
-
-
-                <!-- Artykuł początek -->
-                <div class="max-w-screen-lg mx-auto flex flex-col lg:flex-row pt-10 px-2 md:px-10 py-10 scroll-mt-[70px]" id="news2" data-aos="fade-down" data-aos-offset="400">
-
-                    <!-- Left site -->
-                    <div class="w-full lg:w-2/12 text-center mb-5 lg:mb-0">
-                        <div class="w-24 h-24 md:w-28 md:h-28 border-2 border-yellow-500 rounded-lg font-semibold flex-col items-center justify-center text-center py-2">
-                            <div class="text-white font-bold text-lg md:text-2xl">12</div>
-                            <div class=" text-gray-100 text-base md:text-xl">Grudnia</div>
-                            <div class="text-gray-100 text-base md:text-xl">2023</div>
-                        </div>
-                    </div>
-            
-                    <!-- Right site -->
-                    <div class="bg-[#1d1d1d] w-full lg:w-10/12 border-2 border-zinc-900 shadow-xl shadow-black p-4 rounded-lg">
-
-                        <div class="lg:flex">
-                            <!-- Post image -->
-                            <div class="lg:w-6/12">
-                                <img src="./images/aktualnosci/mikolajki.jpg" class="w-full h-auto rounded-sm border-2 border-gray-300">
-                            </div>
-
-                            <!-- Title div + short text -->
-                            <div class="lg:w-6/12 mt-4 md:mt-2 lg:ml-2 lg:mt-0">
-                                <h1 class="text-lg md:text-xl font-semibold text-yellow-500 border-b-2 border-gray-400 pb-2">Motoryzacyjne mikołajki w słupcy zorganizowane przez R/W Concept.</h1>
-                                <p class="text-white text-left text-base mt-2 md:mt-2">
-                                    Motoryzacyjne Mikołajki w Słupcy, zorganizowane przez R/W Concept, to niepowtarzalne wydarzenie, które zgromadziło miłośników motoryzacji w jednym miejscu, oferując emocjonujący dzień pełen unikalnych prezentacji pojazdów i atrakcji związanych z motoryzacją.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Long text -->
-                        <p class="longText px-4 md:px-0 py-2 md:py-4 md:ml-2 text-white text-left" id="content-text-2" style="display: none;">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus excepturi at in cum vitae exercitationem saepe culpa fugiat labore tempora autem dolorum magnam, accusantium fugit error! Commodi impedit error veritatis nihil, sequi libero quibusdam ducimus dolores eius vel qui molestias minus! Sint maiores doloribus excepturi eius corrupti ratione praesentium eaque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, ab voluptates rem in possimus ad facilis, repudiandae exercitationem, vero impedit rerum corporis aliquam eveniet. Quod dolores at delectus cum expedita?
-                        </p>
-
-                        <!-- Open full text btn -->
-                        <div class="w-full flex items-end justify-end mt-4">
-                            <button id="content-btn-2" class="text-yellow-500 border-2 border-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-darkgray duration-300">Czytaj dalej...</button>
-                        </div>
-
-                        <!-- Small gallery -->
-                        <div id="gallery2" class="flex mt-4">
-                            <a href="./images/aktualnosci/mikolajki.jpg" class="w-[200px] p-2">
-                                <img src="./images/aktualnosci/mikolajki.jpg" class="rounded-sm hover:scale-110 duration-300">
-                            </a>
-                            <a href="./images/aktualnosci/mikolajki.jpg" class="w-[200px] p-2">
-                                <img src="./images/aktualnosci/mikolajki.jpg" class="rounded-sm hover:scale-110 duration-300">
-                            </a>
-                            <a href="./images/aktualnosci/mikolajki.jpg" class="w-[200px] p-2">
-                                <img src="./images/aktualnosci/mikolajki.jpg" class="rounded-sm hover:scale-110 duration-300">
-                            </a>
-                            <a href="./images/aktualnosci/mikolajki.jpg" class="w-[200px] p-2">
-                                <img src="./images/aktualnosci/mikolajki.jpg" class="rounded-sm hover:scale-110 duration-300">
-                            </a>
-                        </div>    
+            <section id="howToBuy" class="w-full bg-white py-10">
+                <div class="flex justify-center items-center">
+                    <div class="text-center w-full px-4 py-10 font-poppins" data-aos="fade-up">
+                        <h1 class="text-darkgray text-5xl md:text-7xl font-bold">Jak kupić produkty w naszym sklepie?</h1>
+                        <h3 class="text-darkgray text-base md:text-xl font-semibold mt-4 md:mt-10">To proste! Wystarczy kilka kroków...</h3>
                     </div>
                 </div>
-            <!-- ******** Artykuł koniec ******** -->
+
+                <div class="flex justify-center items-center">
+                    <div class="flex-col space-y-3">
+                        <div class="w-[450px] h-fit p-4 border-2 border-darkgray rounded-lg bg-yellow-500 mx-auto" data-aos="fade-right">
+                            <h2 class="font-bold">Krok 1:</h2>
+                            <p class="text-left">Przejdź do naszego sklepu na allegro.</p>
+                            <button class="mt-4">
+                                <a href="www.allegro.pl" class="border-2 border-darkgray bg-darkgray px-3 py-2 text-sm font-semibold text-white rounded-md hover:bg-white hover:text-darkgray duration-300">Odwiedź sklep</a>
+                            </button>
+                        </div>
+    
+                        <div class="w-[450px] h-fit p-4 border-2 border-darkgray rounded-lg bg-yellow-500 mx-auto" data-aos="fade-left">
+                            <h2 class="font-bold">Krok 2:</h2>
+                            <p class="text-left">Wyszukaj produkty, które cię interesują.</p>
+                        </div>
+
+                        <div class="w-[450px] h-fit p-4 border-2 border-darkgray rounded-lg bg-yellow-500 mx-auto" data-aos="fade-right">
+                            <h2 class="font-bold">Krok 3:</h2>
+                            <p class="text-left">Dodaj produkty do koszyka a następnie przejdź do płatności.</p>
+                        </div>
+
+                        <div class="w-[450px] h-fit p-4 border-2 border-darkgray rounded-lg bg-yellow-500 mx-auto" data-aos="fade-left">
+                            <h2 class="font-bold">Krok 4:</h2>
+                            <p class="text-left">Czekaj na paczkę my zajmiemy się resztą! 👌</p>
+                        </div>
+
+                        <div class="w-[450px] h-fit p-4 border-2 border-darkgray rounded-lg bg-yellow-500 mx-auto" data-aos="fade-right">
+                            <h2 class="font-bold">Krok 5:</h2>
+                            <p class="text-left">Po otrzymaniu paczki od kuriera nie zapomnij podzielic się opinią tutaj: 
+                                <ul class="flex-col mt-2 list-disc ml-5">
+                                    <li>
+                                        <a href="linkDoOpnii1" class="text-gray-600 hover:text-black duration-300">Opinie Allegro</a>
+                                    </li>
+                                    <li>
+                                        <a href="linkDoOpnii2" class="text-gray-600 hover:text-black duration-300">Opinie Google</a>
+                                    </li>
+                                    <li>
+                                        <a href="linkDoOpnii3" class="text-gray-600 hover:text-black duration-300">Opinie Facebook</a>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
 
 
-            </main>
+            <section id="bestProducts" class="w-full min-h-screen bg-darkgray scroll-mt-[50px]">
+                <div class="flex justify-center items-center">
+                    <div class="text-center w-full px-2 md:px-4 py-10 font-poppins" data-aos="fade-up">
+                        <h1 class="text-white text-5xl md:text-7xl font-bold">Polecane produkty</h1>
+                        <h3 class="text-white text-base md:text-xl font-semibold mt-4 md:mt-10">Sprawdź co klienci najczęściej kupują</h3>
+                    </div>
+                </div>
+
+                
+                <div class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 pb-10">
+
+                    <!--   ✅ Product card 1 - Starts Here 👇 -->
+                    <div class="w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" data-aos="fade-down">
+                      <a href="#">
+                        <img src="https://tec2000.pl/wp-content/uploads/2020/08/TEC2000_Plukanka_silnika_ENGINE_Flush_myje_silnik_best.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                        <div class="px-4 py-3 w-72">
+                          <span class="text-gray-400 mr-3 uppercase text-xs">TEC 2000</span>
+                          <p class="text-lg font-bold text-black truncate block capitalize">
+                            Engine Flush Płukanka silnika</p>
+                          <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">70,00 zł</p>
+                            <del>
+                              <p class="text-sm text-gray-600 cursor-auto ml-2">85,00zł</p>
+                            </del>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!--   🛑 Product card 1 - Ends Here  -->
+
+
+
+                    <!--   ✅ Product card 2 - Starts Here 👇 -->
+                    <div class="w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" data-aos="fade-down">
+                        <a href="#">
+                          <img src="https://tec2000.pl/wp-content/uploads/2020/01/TEC2000-OB-Dodatek_do_oleju_zmniejsza_tarcie.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                          <div class="px-4 py-3 w-72">
+                            <span class="text-gray-400 mr-3 uppercase text-xs">TEC 2000</span>
+                            <p class="text-lg font-bold text-black truncate block capitalize">
+                                Oil Booster Dodatek do oleju</p>
+                            <div class="flex items-center">
+                              <p class="text-lg font-semibold text-black cursor-auto my-3">74,00 zł</p>
+                              <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">80,00zł</p>
+                              </del>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!--   🛑 Product card 2 - Ends Here  -->
+
+
+                    <!--   ✅ Product card 3 - Starts Here 👇 -->
+                    <div class="w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" data-aos="fade-down">
+                        <a href="#">
+                          <img src="https://sklep.fresso.pl/userdata/public/gfx/199/gentleman-nowe.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                          <div class="px-4 py-3 w-80">
+                            <span class="text-gray-400 mr-3 uppercase text-xs">FRESSO PERFUMY SAMOCHODOWE</span>
+                            <p class="text-lg font-bold text-black truncate block capitalize">
+                                GENTLEMAN 50 ML</p>
+                            <div class="flex items-center">
+                              <p class="text-lg font-semibold text-black cursor-auto my-3">40,00 zł</p>
+                              <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2"></p>
+                              </del>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!--   🛑 Product card 3 - Ends Here  -->
+
+
+                    <!--   ✅ Product card 4 - Starts Here 👇 -->
+                    <div class="w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" data-aos="fade-down">
+                        <a href="#">
+                          <img src="https://sklep.fresso.pl/userdata/public/gfx/204/pure-passion-nowe.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                          <div class="px-4 py-3 w-72">
+                            <span class="text-gray-400 mr-3 uppercase text-xs">FRESSO PERFUMY SAMOCHODOWE</span>
+                            <p class="text-lg font-bold text-black truncate block capitalize">
+                                PURE PASSION 50 ML</p>
+                            <div class="flex items-center">
+                              <p class="text-lg font-semibold text-black cursor-auto my-3">28,00zł</p>
+                              <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">40,00zł</p>
+                              </del>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!--   🛑 Product card 4 - Ends Here  -->
+                  
+                  </div>
+
+                  <a href="www.allegro.pl" class="block w-fit mx-auto mt-10 text-white px-8 py-2 text-xl font-raleway font-semibold rounded-lg border border-yellow-500 hover:bg-yellow-500 hover:text-darkgray duration-300">Otwórz sklep</a>
+                  
+                  <!-- 🛑 Grid Section - Ends Here -->
+            </section>
+
+
+            <section id="katalog" class="w-full h-screen bg-yellow-500 scroll-mt-[50px]">
+                <div class="flex justify-center items-center">
+                    <div class="text-center md:w-1/2 px-4 py-10 font-poppins" data-aos="fade-down">
+                        <h1 class="text-darkgray text-4xl md:text-7xl font-bold">Katalogi dostępnych u nas producentów</h1>
+                        <h3 class="text-darkgray text-base md:text-xl font-semibold mt-4 md:mt-10">Sprawdź katalog, wybierz coś ciekawego i zamów!</h3>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <ul class="flex-col space-y-8 text-left">
+                        <li data-aos="fade-right">
+                            <a href="textLinkKatalog" class="text-darkgray hover:text-gray-500 duration-300 text-xl border-b-2 border-darkgray hover:border-gray-500">Katalog - TEC 2000</a>
+                        </li>
+                        <li data-aos="fade-left">
+                            <a href="textLinkKatalog" class="text-darkgray hover:text-gray-500 duration-300 text-xl border-b-2 border-darkgray hover:border-gray-500">Katalog - FRESSO</a>
+                        </li>
+                        <li data-aos="fade-right">
+                            <a href="textLinkKatalog" class="text-darkgray hover:text-gray-500 duration-300 text-xl border-b-2 border-darkgray hover:border-gray-500">Katalog - MOTOXSEW23</a>
+                        </li>
+                        <li data-aos="fade-left">
+                            <a href="textLinkKatalog" class="text-darkgray hover:text-gray-500 duration-300 text-xl border-b-2 border-darkgray hover:border-gray-500">Katalog - FDFE323</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
         
             <section id="contact" class="border-t-[1px] border-gray-600">
                 <div class="py-20 bg-darkgray">
@@ -334,29 +385,6 @@
         <!-- AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <!-- Light Gallery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
-        <script>
-            function setupGallery(galleryId) {
-                const gallery = document.getElementById(galleryId);
-                if (!gallery) {
-                    console.error(`Gallery with id '${galleryId}' not found.`);
-                    return;
-                }
-
-                lightGallery(gallery, {
-                    controls: true,
-                    counter: true,
-                    download: false,
-                });
-            }
-
-            setupGallery('gallery1');
-            setupGallery('gallery2');
-            // Add next galleries on web page...
-
-        </script>
-
         <!-- Loading Page Script -->
         <script src="./js/loading.js"></script>
 
@@ -369,15 +397,16 @@
         <!-- Dropdown menu -->
         <script src="./js/dropdown.js"></script>
 
-        <!-- Show/hide text script -->
-        <script src="./js/textShow.js"></script>
-
         <!-- SmtpJS Mail sender -->
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script src="./js/mailsender.js"></script>
 
         <!-- Awesome Icons -->
         <script src="https://kit.fontawesome.com/3fd4863eda.js" crossorigin="anonymous"></script>
+
+        <!-- Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script src="./js/swiper.js"></script>
 
 </body>
 </html>
