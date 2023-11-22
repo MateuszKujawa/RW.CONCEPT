@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aktualności | R/W Concept</title>
+    <title>Sklep | R/W Concept</title>
 
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="style.css">
@@ -18,6 +18,8 @@
     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <!-- LightGallery -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css"/>
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -103,20 +105,20 @@
                     <div class="flex-col space-y-3 px-6">
                         <div class="w-full md:w-[450px] h-fit p-4 border-2 border-darkgray rounded-lg bg-yellow-500 mx-auto" data-aos="fade-right">
                             <h2 class="font-bold">Krok 1:</h2>
-                            <p class="text-left">Przejdź do naszego sklepu na allegro.</p>
+                            <p class="text-left">Przejdź do naszego sklepu na allegro. 🏪</p>
                             <button class="mt-4">
-                                <a href="www.allegro.pl" class="border-2 border-darkgray bg-darkgray px-3 py-2 text-sm font-semibold text-white rounded-md hover:bg-white hover:text-darkgray duration-300">Odwiedź sklep</a>
+                                <a href="./wtrakcie.html" class="border-2 border-darkgray bg-darkgray px-3 py-2 text-sm font-semibold text-white rounded-md hover:bg-white hover:text-darkgray duration-300">Odwiedź sklep</a>
                             </button>
                         </div>
     
                         <div class="w-full md:w-[450px] h-fit p-4 border-2 border-darkgray rounded-lg bg-yellow-500 mx-auto" data-aos="fade-left">
                             <h2 class="font-bold">Krok 2:</h2>
-                            <p class="text-left">Wyszukaj produkty, które cię interesują.</p>
+                            <p class="text-left">Wyszukaj produkty, które cię interesują. 🔍</p>
                         </div>
 
                         <div class="w-full md:w-[450px] h-fit p-4 border-2 border-darkgray rounded-lg bg-yellow-500 mx-auto" data-aos="fade-right">
                             <h2 class="font-bold">Krok 3:</h2>
-                            <p class="text-left">Dodaj produkty do koszyka a następnie przejdź do płatności.</p>
+                            <p class="text-left">Dodaj produkty do koszyka a następnie przejdź do płatności. 🛒💰</p>
                         </div>
 
                         <div class="w-full md:w-[450px] h-fit p-4 border-2 border-darkgray rounded-lg bg-yellow-500 mx-auto" data-aos="fade-left">
@@ -126,7 +128,7 @@
 
                         <div class="w-full md:w-[450px] h-fit p-4 border-2 border-darkgray rounded-lg bg-yellow-500 mx-auto" data-aos="fade-right">
                             <h2 class="font-bold">Krok 5:</h2>
-                            <p class="text-left">Po otrzymaniu paczki od kuriera nie zapomnij podzielic się opinią tutaj: 
+                            <p class="text-left">Po otrzymaniu paczki od kuriera nie zapomnij podzielic się opinią tutaj: 👇 
                                 <ul class="flex-col mt-2 list-disc ml-5">
                                     <li>
                                         <a href="linkDoOpnii1" class="text-gray-600 hover:text-black duration-300">Opinie Allegro</a>
@@ -134,126 +136,231 @@
                                     <li>
                                         <a href="linkDoOpnii2" class="text-gray-600 hover:text-black duration-300">Opinie Google</a>
                                     </li>
-                                    <li>
-                                        <a href="linkDoOpnii3" class="text-gray-600 hover:text-black duration-300">Opinie Facebook</a>
-                                    </li>
                                 </ul>
                             </p>
                         </div>
                     </div>
-                   
                 </div>
             </section>
 
 
-            <section id="bestProducts" class="w-full min-h-screen bg-darkgray scroll-mt-[50px] pb-10">
+            <section id="bestProducts" class="w-full lg:h-screen bg-darkgray scroll-mt-[50px] pb-10">
                 <div class="flex justify-center items-center">
-                    <div class="text-center w-full px-2 md:px-4 py-10 font-poppins" data-aos="fade-up">
-                        <h1 class="text-white text-5xl md:text-7xl font-bold">Polecane produkty</h1>
+                    <div class="text-center w-full px-2 md:px-4 pt-10 font-poppins" data-aos="fade-up">
+                        <h1 class="text-white text-4xl md:text-7xl font-bold">Polecane produkty</h1>
                         <h3 class="text-white text-base md:text-xl font-semibold mt-4 md:mt-10">Sprawdź co klienci najczęściej kupują</h3>
                     </div>
                 </div>
 
-                
-                <div class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 pb-10">
+                <div class="w-full mx-auto relative" data-aos="fade-down" data-aos-duration="2000">
+                    <swiper-container class="productSwiper" init="false" navigation="true">
+                        <swiper-slide class="product-slide">
+                            <!--   ✅ Product card 1 - Starts Here 👇 -->
+                                <div class="w-80 bg-white shadow-xl shadow-black rounded-xl duration-500 hover:scale-105 hover:shadow-2xl">
+                                    <a href="./wtrakcie.html" target="_blank">
+                                        <img src="https://tec2000.pl/wp-content/uploads/2020/08/TEC2000_Plukanka_silnika_ENGINE_Flush_myje_silnik_best.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                                        
+                                        <div class="px-4 py-3 w-80">
+                                            <span class="text-gray-400 mr-3 uppercase text-xs">TEC 2000</span>
+                                            <p class="text-lg font-semibold font-poppins text-black truncate block uppercase">
+                                            Płukanka silnika
+                                            </p>
+                                            <div class="flex items-center">
+                                                <p class="text-lg font-semibold text-black cursor-auto my-3">70,00 zł</p>
 
-                    <!--   ✅ Product card 1 - Starts Here 👇 -->
-                    <div class="w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" data-aos="fade-down">
-                      <a href="#">
-                        <img src="https://tec2000.pl/wp-content/uploads/2020/08/TEC2000_Plukanka_silnika_ENGINE_Flush_myje_silnik_best.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
-                        <div class="px-4 py-3 w-72">
-                          <span class="text-gray-400 mr-3 uppercase text-xs">TEC 2000</span>
-                          <p class="text-lg font-bold text-black truncate block capitalize">
-                            Engine Flush Płukanka silnika</p>
-                          <div class="flex items-center">
-                            <p class="text-lg font-semibold text-black cursor-auto my-3">70,00 zł</p>
-                            <del>
-                              <p class="text-sm text-gray-600 cursor-auto ml-2">85,00zł</p>
-                            </del>
-                          </div>
-                        </div>
-                      </a>
+                                                <del>
+                                                    <p class="text-sm text-gray-600 cursor-auto ml-2">85,00zł</p>
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!--   🛑 Product card 1 - Ends Here  -->
+                        </swiper-slide>
+                        <swiper-slide class="product-slide">
+                            <!--   ✅ Product card 1 - Starts Here 👇 -->
+                                <div class="w-80 bg-white shadow-xl shadow-black rounded-xl duration-500 hover:scale-105 hover:shadow-2xl">
+                                    <a href="./wtrakcie.html" target="_blank">
+                                        <img src="https://sklep.fresso.pl/userdata/public/gfx/199/gentleman-nowe.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                                        
+                                        <div class="px-4 py-3 w-80">
+                                            <span class="text-gray-400 mr-3 uppercase text-xs">FRESSO</span>
+                                            <p class="text-lg font-semibold font-poppins text-black truncate block uppercase">
+                                                PERFUMY GENTLEMAN 50 ML
+                                            </p>
+                                            <div class="flex items-center">
+                                                <p class="text-lg font-semibold text-black cursor-auto my-3">35,00 zł</p>
+
+                                                <del>
+                                                    <p class="text-sm text-gray-600 cursor-auto ml-2">45,00zł</p>
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!--   🛑 Product card 1 - Ends Here  -->
+                        </swiper-slide>
+                        <swiper-slide class="product-slide">
+                            <!--   ✅ Product card 1 - Starts Here 👇 -->
+                                <div class="w-80 bg-white shadow-xl shadow-black rounded-xl duration-500 hover:scale-105 hover:shadow-2xl">
+                                    <a href="./wtrakcie.html" target="_blank">
+                                        <img src="https://sklep.fresso.pl/userdata/public/gfx/192/Dark-Delight-zawieszka.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                                        
+                                        <div class="px-4 py-3 w-80">
+                                            <span class="text-gray-400 mr-3 uppercase text-xs">FRESSO</span>
+                                            <p class="text-lg font-semibold font-poppins text-black truncate block uppercase">
+                                                ZAWIESZKA - DARK DELIGHT
+                                            </p>
+                                            <div class="flex items-center">
+                                                <p class="text-lg font-semibold text-black cursor-auto my-3">20,00 zł</p>
+
+                                                <del>
+                                                    <p class="text-sm text-gray-600 cursor-auto ml-2"></p>
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!--   🛑 Product card 1 - Ends Here  -->
+                        </swiper-slide>
+                        <swiper-slide class="product-slide">
+                            <!--   ✅ Product card 1 - Starts Here 👇 -->
+                                <div class="w-80 bg-white shadow-xl shadow-black rounded-xl duration-500 hover:scale-105 hover:shadow-2xl">
+                                    <a href="./wtrakcie.html" target="_blank">
+                                        <img src="https://static5.hurtoils.pl/hpeciai/fdd4784be3b4d8fbf7bc2cb72eb1e7c4/pol_pm_Olej-Castrol-Edge-Titanium-LL-5L-5W30-Zawieszka-27507_1.webp" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                                        
+                                        <div class="px-4 py-3 w-80">
+                                            <span class="text-gray-400 mr-3 uppercase text-xs">Castrol Edge</span>
+                                            <p class="text-lg font-semibold font-poppins text-black truncate block uppercase">
+                                            Olej Titanium LL 5L 5W30
+                                            </p>
+                                            <div class="flex items-center">
+                                                <p class="text-lg font-semibold text-black cursor-auto my-3">190,00 zł</p>
+
+                                                <del>
+                                                    <p class="text-sm text-gray-600 cursor-auto ml-2"></p>
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!--   🛑 Product card 1 - Ends Here  -->
+                        </swiper-slide>
+                        <swiper-slide class="product-slide">
+                            <!--   ✅ Product card 1 - Starts Here 👇 -->
+                                <div class="w-80 bg-white shadow-xl shadow-black rounded-xl duration-500 hover:scale-105 hover:shadow-2xl">
+                                    <a href="./wtrakcie.html" target="_blank">
+                                        <img src="https://sklep.motogo.pl/images/detailed/56/frost_eater_500ml_sam.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                                        
+                                        <div class="px-4 py-3 w-80">
+                                            <span class="text-gray-400 mr-3 uppercase text-xs">ADBL</span>
+                                            <p class="text-lg font-semibold font-poppins text-black truncate block uppercase">
+                                            Odmrażacz do szyb do -60°C
+                                            </p>
+                                            <div class="flex items-center">
+                                                <p class="text-lg font-semibold text-black cursor-auto my-3">16,00 zł</p>
+
+                                                <del>
+                                                    <p class="text-sm text-gray-600 cursor-auto ml-2">22,00zł</p>
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!--   🛑 Product card 1 - Ends Here  -->
+                        </swiper-slide>
+                        <swiper-slide class="product-slide">
+                            <!--   ✅ Product card 1 - Starts Here 👇 -->
+                                <div class="w-80 bg-white shadow-xl shadow-black rounded-xl duration-500 hover:scale-105 hover:shadow-2xl">
+                                    <a href="./wtrakcie.html" target="_blank">
+                                        <img src="https://tec2000.pl/wp-content/uploads/2019/02/TEC2000-IC-Czysci_uklad_dolotu_powietrza_i_bezposredni_wtrysk_paliwa.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                                        
+                                        <div class="px-4 py-0 w-80">
+                                            <span class="text-gray-400 mr-3 uppercase text-xs">TEC 2000</span>
+                                            <p class="text-lg font-semibold font-poppins text-black truncate block uppercase">
+                                            Preparat do czyszczenia<br> układu dolotowego
+                                            </p>
+                                            <div class="flex items-center">
+                                                <p class="text-lg font-semibold text-black cursor-auto my-3">90,00 zł</p>
+
+                                                <del>
+                                                    <p class="text-sm text-gray-600 cursor-auto ml-2"></p>
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!--   🛑 Product card 1 - Ends Here  -->
+                        </swiper-slide>
+                        <swiper-slide class="product-slide">
+                            <!--   ✅ Product card 1 - Starts Here 👇 -->
+                                <div class="w-80 bg-white shadow-xl shadow-black rounded-xl duration-500 hover:scale-105 hover:shadow-2xl">
+                                    <a href="./wtrakcie.html" target="_blank">
+                                        <img src="https://tec2000.pl/wp-content/uploads/2019/02/RSL_Zdjecie.png?_gl=1*rj32ov*_up*MQ..&gclid=Cj0KCQiA6vaqBhCbARIsACF9M6mSuFIbX3RFJ_y4NfJmWtfk4FYkDdW6_2ArRhPIy5aWEvHHGTH6xHkaAkciEALw_wcB" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                                        
+                                        <div class="px-4 py-0 w-80">
+                                            <span class="text-gray-400 mr-3 uppercase text-xs">TEC 2000</span>
+                                            <p class="text-lg font-semibold font-poppins text-black truncate block uppercase">
+                                                Radiator Stop Leak <br> Uszczelniacz chłodnicy
+                                            </p>
+                                            <div class="flex items-center">
+                                                <p class="text-lg font-semibold text-black cursor-auto my-3">60,00 zł</p>
+
+                                                <del>
+                                                    <p class="text-sm text-gray-600 cursor-auto ml-2"></p>
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!--   🛑 Product card 1 - Ends Here  -->
+                        </swiper-slide>
+                        <swiper-slide class="product-slide">
+                            <!--   ✅ Product card 1 - Starts Here 👇 -->
+                                <div class="w-80 bg-white shadow-xl shadow-black rounded-xl duration-500 hover:scale-105 hover:shadow-2xl">
+                                    <a href="./wtrakcie.html" target="_blank">
+                                        <img src="https://tec2000.pl/wp-content/uploads/2020/03/TEC2000-DSC-Czysci_zbiornik_i_wtryskiwacze_diesla.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
+                                        
+                                        <div class="px-4 py-0 w-80">
+                                            <span class="text-gray-400 mr-3 uppercase text-xs">TEC 2000</span>
+                                            <p class="text-lg font-semibold font-poppins text-black truncate block uppercase">
+                                                Diesel System Cleaner <br> Dodatek do diesla
+                                            </p>
+                                            <div class="flex items-center">
+                                                <p class="text-lg font-semibold text-black cursor-auto my-3">70,00 zł</p>
+
+                                                <del>
+                                                    <p class="text-sm text-gray-600 cursor-auto ml-2"></p>
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!--   🛑 Product card 1 - Ends Here  -->
+                        </swiper-slide>
+                    </swiper-container>    
+                    
+                    <div class="swiper-buttons-box hidden md:hidden lg:block"> 
+                        <div class="swiper-button-prev" style="color: #fff;"></div>
+                        <div class="swiper-button-next" style="color: #fff;"></div>
                     </div>
-                    <!--   🛑 Product card 1 - Ends Here  -->
-
-
-
-                    <!--   ✅ Product card 2 - Starts Here 👇 -->
-                    <div class="w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" data-aos="fade-down">
-                        <a href="#">
-                          <img src="https://tec2000.pl/wp-content/uploads/2020/01/TEC2000-OB-Dodatek_do_oleju_zmniejsza_tarcie.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
-                          <div class="px-4 py-3 w-72">
-                            <span class="text-gray-400 mr-3 uppercase text-xs">TEC 2000</span>
-                            <p class="text-lg font-bold text-black truncate block capitalize">
-                                Oil Booster Dodatek do oleju</p>
-                            <div class="flex items-center">
-                              <p class="text-lg font-semibold text-black cursor-auto my-3">74,00 zł</p>
-                              <del>
-                                <p class="text-sm text-gray-600 cursor-auto ml-2">80,00zł</p>
-                              </del>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <!--   🛑 Product card 2 - Ends Here  -->
-
-
-                    <!--   ✅ Product card 3 - Starts Here 👇 -->
-                    <div class="w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" data-aos="fade-down">
-                        <a href="#">
-                          <img src="https://sklep.fresso.pl/userdata/public/gfx/199/gentleman-nowe.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
-                          <div class="px-4 py-3 w-80">
-                            <span class="text-gray-400 mr-3 uppercase text-xs">FRESSO PERFUMY SAMOCHODOWE</span>
-                            <p class="text-lg font-bold text-black truncate block capitalize">
-                                GENTLEMAN 50 ML</p>
-                            <div class="flex items-center">
-                              <p class="text-lg font-semibold text-black cursor-auto my-3">40,00 zł</p>
-                              <del>
-                                <p class="text-sm text-gray-600 cursor-auto ml-2"></p>
-                              </del>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <!--   🛑 Product card 3 - Ends Here  -->
-
-
-                    <!--   ✅ Product card 4 - Starts Here 👇 -->
-                    <div class="w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl" data-aos="fade-down">
-                        <a href="#">
-                          <img src="https://sklep.fresso.pl/userdata/public/gfx/204/pure-passion-nowe.jpg" alt="Product" class="h-80 w-80 object-cover rounded-t-xl" />
-                          <div class="px-4 py-3 w-72">
-                            <span class="text-gray-400 mr-3 uppercase text-xs">FRESSO PERFUMY SAMOCHODOWE</span>
-                            <p class="text-lg font-bold text-black truncate block capitalize">
-                                PURE PASSION 50 ML</p>
-                            <div class="flex items-center">
-                              <p class="text-lg font-semibold text-black cursor-auto my-3">28,00zł</p>
-                              <del>
-                                <p class="text-sm text-gray-600 cursor-auto ml-2">40,00zł</p>
-                              </del>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <!--   🛑 Product card 4 - Ends Here  -->
-                  
-                  </div>
-
-                  <a href="www.allegro.pl" class="block w-fit mx-auto mt-10 mb-10 text-white px-8 py-2 text-xl font-raleway font-semibold rounded-lg border border-yellow-500 hover:bg-yellow-500 hover:text-darkgray duration-300">Otwórz sklep</a>
-                  
-                  <!-- 🛑 Grid Section - Ends Here -->
+                    <div class="swiper-pagination"></div> 
+                </div>
+                <a href="www.allegro.pl" class="block w-fit mx-auto mt-10 mb-10 text-white px-8 py-2 text-xl font-raleway font-semibold rounded-lg border border-yellow-500 hover:bg-yellow-500 hover:text-darkgray duration-300">Otwórz sklep</a>
+                
+    
             </section>
 
 
             <section id="katalog" class="w-full h-screen bg-yellow-500 scroll-mt-[50px]">
                 <div class="flex justify-center items-center">
-                    <div class="text-center md:w-1/2 px-4 py-10 font-poppins" data-aos="fade-down">
+                    <div class="text-center w-full px-4 mt-20 font-poppins" data-aos="fade-down">
                         <h1 class="text-darkgray text-4xl md:text-7xl font-bold">Katalogi dostępnych u nas producentów</h1>
                         <h3 class="text-darkgray text-base md:text-xl font-semibold mt-4 md:mt-10">Sprawdź katalog, wybierz coś ciekawego i zamów!</h3>
                     </div>
                 </div>
 
-                <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center mt-10">
                     <ul class="flex-col space-y-8 text-left">
                         <li data-aos="fade-right">
                             <a href="textLinkKatalog" class="text-darkgray hover:text-gray-500 duration-300 text-xl border-b-2 border-darkgray hover:border-gray-500">Katalog - TEC 2000</a>
@@ -273,11 +380,11 @@
 
 
         
-            <section id="contact" class="border-t-[1px] border-gray-600">
+            <section id="contact">
                 <div class="py-20 bg-darkgray">
                     <div class="max-w-6xl mx-auto bg-darkgray rounded-lg">
                         <div class="grid md:grid-cols-2 items-center gap-16 sm:p-10 p-4 font-[sans-serif]">
-                            <div data-aos="fade-right" data-aos-delay="300" data-aos-offset="100">
+                            <div data-aos="fade-right" data-aos-delay="300" data-aos-offset="-100">
                                 <h1 class="text-4xl font-extrabold text-white">Skontaktuj się z nami</h1>
                                 <p class="text-sm text-gray-400 mt-3">Masz pytanie lub jesteś zainteresowany współpracą z nami? Napisz do nas a na pewno się odezwiemy!</p>
                                 <ul class="mt-12 space-y-4">
@@ -288,16 +395,16 @@
                                                 d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
                                                 data-original="#000000" />
                                         </svg>
-                                        <a href="javascript:void(0)" class="text-white text-base ml-3">
-                                            <strong>rwconcept.info@gmail.com</strong>
-                                        </a>
+                                        <p class="text-white text-base ml-3">
+                                            <strong>rwconceptcompany@gmail.com</strong>
+                                        </p>
                                     </li>
                                     <li class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='rgb(234 179 8)' viewBox="0 0 482.6 482.6">
                                             <path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z" data-original="#000000"></path>
                                         </svg>
                                         <a href="tel: 111-222-333" class="text-white text-base ml-3 hover:text-yellow-500 duration-300">
-                                            <strong>111 222 333</strong>
+                                            <strong>730 101 204</strong>
                                         </a>
                                     </li>
                                     <li class="flex items-center">
@@ -315,10 +422,10 @@
                                     <h3 class="text-2xl text-gray-300 py-2">Godziny otwarcia:</h3>
                                     <ul class="text-white">
                                         <li class="py-1">
-                                            Pon - Pt : <span class="text-yellow-500 font-semibold">9:00 - 17:00</span> 
+                                            Pon - Pt : <span class="text-yellow-500 font-semibold">8:00 - 17:00</span> 
                                         </li>
                                         <li class="py-1">
-                                            Sobota : <span class="text-yellow-500 font-semibold">9:00 - 17:00</span> 
+                                            Sobota : <span class="text-yellow-500 font-semibold">8:00 - 14:00</span> 
                                         </li>
                                         <li class="py-1">
                                             Niedziela : <span class="text-yellow-500 font-semibold">Zamknięte</span> 
@@ -327,23 +434,23 @@
                                 </div>
 
                                 <div class="flex w-fit h-fit space-x-6 mt-10">
-                                    <a href="https://www.facebook.com/ConceptRW?locale=pl_PL" class="text-2xl text-gray-400 hover:text-yellow-500 hover:-translate-y-1 duration-300 ease">
+                                    <a href="https://www.facebook.com/ConceptRW?locale=pl_PL" target="_blank" class="text-2xl text-gray-400 hover:text-yellow-500 hover:-translate-y-1 duration-300 ease">
                                         <i class="fa-brands fa-facebook-f"></i>
                                     </a>
-                                    <a href="https://www.instagram.com/concept.r.w/" class="text-2xl text-gray-400 hover:text-yellow-500 hover:-translate-y-1 duration-300 ease">
+                                    <a href="https://www.instagram.com/concept.r.w/" target="_blank" class="text-2xl text-gray-400 hover:text-yellow-500 hover:-translate-y-1 duration-300 ease">
                                         <i class="fa-brands fa-instagram"></i>
                                     </a>
-                                    <a href="#tiktok.rwconcept.soon" class="text-2xl text-gray-400 hover:text-yellow-500 hover:-translate-y-1 duration-300 ease">
+                                    <a href="https://www.tiktok.com/@d_d_detailing" target="_blank" class="text-2xl text-gray-400 hover:text-yellow-500 hover:-translate-y-1 duration-300 ease">
                                         <i class="fa-brands fa-tiktok"></i>
                                     </a>
-                                    <a href="#youtube.rwconcept.soon" class="text-2xl text-gray-400 hover:text-yellow-500 hover:-translate-y-1 duration-300 ease">
+                                    <a href="https://www.youtube.com/watch?v=IneeFc6pROQ&ab_channel=AKFilms" target="_blank" class="text-2xl text-gray-400 hover:text-yellow-500 hover:-translate-y-1 duration-300 ease">
                                         <i class="fa-brands fa-youtube"></i>
                                     </a>
                                 </div>
 
 
                             </div>
-                            <div class="bg-zinc-800 p-6 rounded-lg" data-aos="fade-left" data-aos-delay="300" data-aos-offset="100">
+                            <div class="bg-zinc-800 p-6 rounded-lg" data-aos="fade-left" data-aos-delay="300" data-aos-offset="-100">
                                 <p class="text-lg font-semibold text-gray-200">Napisz do nas...</p>
                                 <form class="form-contact mt-8 space-y-4" action="#">
                                     <input type='text' placeholder='Imie i nazwisko' required
@@ -364,7 +471,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div id="map" class="flex p-4" data-aos="fade-down" data-aos-delay="300" data-aos-offset="0">
+                        <div id="map" class="flex p-4" data-aos="fade-down" data-aos-delay="300" data-aos-offset="-100">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2052.3057427263893!2d17.869723234430413!3d52.28666231776824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704c5fd6caba093%3A0x1528502a05a5f901!2splac%20Wolno%C5%9Bci%203%2F4%2C%2062-400%20S%C5%82upca!5e0!3m2!1spl!2spl!4v1699221962236!5m2!1spl!2spl" width="100%" height="500" style="border: 0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
@@ -374,13 +481,57 @@
             <section id="footer">
                 <p class="text-center text-xs bg-darkgray text-gray-400 py-1">© 2023 RW/CONCEPT, All Rights Reserved. | Created by: <a href="https://portfolio2023mk-l77o6i5zq-mateuszkujawa.vercel.app/">MKujawaDev.pl</a></p>
             </section>
-    </div>
+    </section>
 
 
 
 
 
     <!-- Scripts -->
+        <!-- Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script>
+            const swiperEl = document.querySelector('.productSwiper')
+            Object.assign(swiperEl, {
+              slidesPerView: 1,
+              spaceBetween: 10,
+              autoplay: {
+                delay: 2500,  
+              },
+              pagination: {
+                el: '.swiper-pagination',
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              breakpoints: {
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                900: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                970: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+                1150: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              },
+            });
+            swiperEl.initialize();
+          </script>      
+        
+        
 
         <!-- AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -403,10 +554,6 @@
 
         <!-- Awesome Icons -->
         <script src="https://kit.fontawesome.com/3fd4863eda.js" crossorigin="anonymous"></script>
-
-        <!-- Swiper -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-        <script src="./js/swiper.js"></script>
 
 </body>
 </html>

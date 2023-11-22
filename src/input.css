@@ -263,6 +263,41 @@ swiper-slide img {
 
 
 
+/* Product swiper */
+.productSwiper {
+  width: 80%;
+  height: 600px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.product-slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #8b8b8b !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+
+@media screen and (max-width: 1150px){
+  .productSwiper{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .swiper-buttons-box{
+    visibility: hidden;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400&display=swap');
 
 @tailwind base;
