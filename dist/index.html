@@ -66,7 +66,9 @@
 
 <body class="bg-darkgray">
     <div id="loading-overlay" class="z-50">
-        <img src="./images/icons/loading.gif" alt="Ładowanie..." id="loading-gif">
+        <video autoplay loop muted id="loading-vid" loading="lazy">
+            <source src="./images/icons/loading_1.webm" type="video/mp4"/>Your browser does not support the video tag.
+        </video>
         <p class="btn-shine" target="_blank">Trwa ładowanie strony...</p>
     </div>
 
@@ -125,7 +127,7 @@
             </nav>
         
             <header class="relative items-center justify-center  overflow-hidden h-screen z-10">
-                <img src="./images/backgrounds/by1.webp" alt="Miniatura wideo" class="hidden">
+                <img src="./images/backgrounds/by1.webp" alt="Miniatura wideo" class="hidden" loading="lazy">
                 <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0">
                     <source src="./images/backgrounds/Video_RWCONCEPT.webm" type="video/mp4" />Your browser does not support the video tag.
                 </video>
@@ -160,22 +162,22 @@
                     <!-- Slider -->
                     <div class="brand-carousel owl-carousel pt-10 md:pt-20 pb-10" data-aos="fade-up">
                         <div class="single-logo w-[100px] h-[100px] md:w-auto md:h-auto">
-                            <img src="./images/partners_images/tec.jpg" alt="">
+                            <img src="./images/partners_images/tec.jpg" alt="logo tec2000" loading="lazy">
                         </div>
                         <div class="single-logo w-[100px] h-[100px] md:w-auto md:h-auto">
-                            <img src="./images/partners_images/fresso.jpg" alt="">
+                            <img src="./images/partners_images/fresso.jpg" alt="logo fresso" loading="lazy">
                         </div>
                         <div class="single-logo w-[100px] h-[100px] md:w-auto md:h-auto">
-                            <img src="./images/partners_images/tec.jpg" alt="">
+                            <img src="./images/partners_images/tec.jpg" alt="logo tec2000" loading="lazy">
                         </div>
                         <div class="single-logo w-[100px] h-[100px] md:w-auto md:h-auto">
-                            <img src="./images/partners_images/fresso.jpg" alt="">
+                            <img src="./images/partners_images/fresso.jpg" alt="logo fresso" loading="lazy">
                         </div>
                         <div class="single-logo w-[100px] h-[100px] md:w-auto md:h-auto">
-                            <img src="./images/partners_images/tec.jpg" alt="">
+                            <img src="./images/partners_images/tec.jpg" alt="logo tec2000" loading="lazy">
                         </div>
                         <div class="single-logo w-[100px] h-[100px] md:w-auto md:h-auto">
-                            <img src="./images/partners_images/fresso.jpg" alt="">
+                            <img src="./images/partners_images/fresso.jpg" alt="logo fresso" loading="lazy">
                         </div>
                     </div>
 
@@ -241,7 +243,7 @@
                                 <div>
                                     <figure>
                                         <!-- Image -->
-                                        <img :src="post.image + '?auto=format&fit=crop&w=400&q=50'" class="rounded-t h-72 w-full object-cover" />
+                                        <img :src="post.image + '?auto=format&fit=crop&w=400&q=50'" class="rounded-t h-72 w-full object-cover" loading="lazy"/>
             
                                         <figcaption class="p-4">
                                             <!-- Title -->
@@ -274,93 +276,93 @@
                 <div class="h-max w-full">
                     <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true" pagination="true" data-aos="fade-down" data-aos-delay="300">
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/1.webp" />
+                            <img src="./images/gallery/4.11/1.webp" loading="lazy"/>
                         </swiper-slide>
             
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/2.webp" />
+                            <img src="./images/gallery/4.11/2.webp" loading="lazy"/>
                         </swiper-slide>
             
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/3.webp" />
+                            <img src="./images/gallery/4.11/3.webp" loading="lazy"/>
                         </swiper-slide>
             
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/4.webp" />
+                            <img src="./images/gallery/4.11/4.webp" loading="lazy"/>
                         </swiper-slide>
     
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/5.webp" />
+                            <img src="./images/gallery/4.11/5.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/6.webp" />
+                            <img src="./images/gallery/4.11/6.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/7.webp" />
+                            <img src="./images/gallery/4.11/7.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/8.webp" />
+                            <img src="./images/gallery/4.11/8.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/9.webp" />
+                            <img src="./images/gallery/4.11/9.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/10.webp" />
+                            <img src="./images/gallery/4.11/10.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/11.webp" />
+                            <img src="./images/gallery/4.11/11.webp" loading="lazy"/>
                         </swiper-slide>
                     </swiper-container>
             
                     <swiper-container class="mySwiper2 z-30" loop="true" space-between="10" slides-per-view="4" free-mode="true" watch-slides-progress="true" data-aos="fade-up" data-aos-delay="300" data-aos-offset="-400">
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/1.webp" />
+                            <img src="./images/gallery/4.11/1.webp" loading="lazy"/>
                         </swiper-slide>
             
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/2.webp" />
+                            <img src="./images/gallery/4.11/2.webp" loading="lazy"/>
                         </swiper-slide>
             
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/3.webp" />
+                            <img src="./images/gallery/4.11/3.webp" loading="lazy"/>
                         </swiper-slide>
             
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/4.webp" />
+                            <img src="./images/gallery/4.11/4.webp" loading="lazy"/>
                         </swiper-slide>
     
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/5.webp" />
+                            <img src="./images/gallery/4.11/5.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/6.webp" />
+                            <img src="./images/gallery/4.11/6.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/7.webp" />
+                            <img src="./images/gallery/4.11/7.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/8.webp" />
+                            <img src="./images/gallery/4.11/8.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/9.webp" />
+                            <img src="./images/gallery/4.11/9.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/10.webp" />
+                            <img src="./images/gallery/4.11/10.webp" loading="lazy"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11/11.webp" />
+                            <img src="./images/gallery/4.11/11.webp" loading="lazy"/>
                         </swiper-slide>
                     </swiper-container>
                 </div>
