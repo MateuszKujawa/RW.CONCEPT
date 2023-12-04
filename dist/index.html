@@ -66,7 +66,7 @@
 
 <body class="bg-darkgray">
     <div id="loading-overlay" class="z-50">
-        <video autoplay loop muted id="loading-vid" loading="lazy">
+        <video autoplay loop muted id="loading-vid">
             <source src="./images/icons/loading_1.webm" type="video/mp4"/>Your browser does not support the video tag.
         </video>
         <p class="btn-shine" target="_blank">Trwa ładowanie strony...</p>
@@ -128,8 +128,11 @@
         
             <header class="relative items-center justify-center  overflow-hidden h-screen z-10">
                 <img src="./images/backgrounds/by1.webp" alt="Miniatura wideo" class="hidden" loading="lazy">
-                <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0">
-                    <source src="./images/backgrounds/Video_RWCONCEPT.webm" type="video/mp4" />Your browser does not support the video tag.
+                <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0 hidden md:block">
+                    <source src="./images/backgrounds/banerh.265HD.mp4" type="video/mp4" />Your browser does not support the video tag.
+                </video>
+                <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0 block md:hidden">
+                    <source src="./images/backgrounds/banemobilh.265.mp4" type="video/mp4" />Your browser does not support the video tag.
                 </video>
         
                 <div class="flex justify-center items-center h-full" data-aos="fade-up">
