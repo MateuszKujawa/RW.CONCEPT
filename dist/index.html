@@ -67,7 +67,7 @@
 <body class="bg-darkgray">
     <div id="loading-overlay" class="z-50">
         <video autoplay loop muted id="loading-vid">
-            <source src="./images/icons/loading_1.webm" type="video/mp4"/>Your browser does not support the video tag.
+            <source src="./images/icons/loading_1.mp4" type="video/mp4"/>Your browser does not support the video tag.
         </video>
         <p class="btn-shine" target="_blank">Trwa ładowanie strony...</p>
     </div>
@@ -128,20 +128,20 @@
         
             <header class="relative items-center justify-center  overflow-hidden h-screen z-10">
                 <img src="./images/backgrounds/by1.webp" alt="Miniatura wideo" class="hidden" loading="lazy">
-                <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0 hidden md:block">
+                <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0 hidden md:block" poster="./images/backgrounds/posterBg.JPG" id="video">
                     <source src="./images/backgrounds/banerh.265HD.mp4" type="video/mp4" />Your browser does not support the video tag.
                 </video>
-                <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0 block md:hidden">
+                <video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none top-0 left-0 block md:hidden" poster="./images/backgrounds/posterBg.JPG" id="video">
                     <source src="./images/backgrounds/banemobilh.265.mp4" type="video/mp4" />Your browser does not support the video tag.
                 </video>
         
                 <div class="flex justify-center items-center h-full" data-aos="fade-up">
                     <div class="w-full mx-auto text-center">
-                        <img src="./images/icons/logo-small.webp" class="flex mx-auto mt-10">
-                            <div class="h-0.5 w-1/2 mx-auto bg-yellow-500 rotate-3 mt-10 mb-4 md:mb-10"></div>
-                            <h2 class="text-white font-poppins font-thin uppercase text-xl md:text-3xl rotate-3">Wpadnij do nas!</h2>
+                        <img src="./images/icons/big_logo.webp" class="flex mx-auto mt-10 p-6">
+                            <div class="h-[3px] w-[80%] md:w-1/2 mx-auto bg-yellow-500 rotate-3 mb-4 mt-10 md:mb-10"></div>
+                            <h2 class="text-white font-poppins font-light uppercase text-2xl md:text-3xl rotate-3">Wpadnij do nas!</h2>
             
-                            <a href="#partners" class="relative inline-flex items-center justify-center p-4 px-14 py-3 overflow-hidden font-medium text-white bg-darkgray transition duration-300 ease-out border-gray-950 border rounded-full shadow-md group mt-24">
+                            <a href="#partners" class="relative inline-flex items-center justify-center p-4 px-14 py-3 overflow-hidden font-medium text-white bg-darkgray/70 transition duration-300 ease-out border-gray-950 border rounded-full shadow-md group mt-24">
                                 <span class="absolute inset-0 flex items-center justify-center w-full h-full text-darkgray duration-300 -translate-y-full bg-yellow-500 group-hover:translate-y-0 ease">
                                     <svg class="w-6 h-6 transform " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7 7m0 0l7-7m-7 7v-14"></path>
@@ -205,24 +205,26 @@
                         Zapraszamy Cię do odwiedzenia naszego sklepu, abyście mogli na własne oczy przekonać się o bogactwie naszej oferty.
                         </p>
                         
-                        <h3 class="text-xl text-yellow-500 pb-6" data-aos="fade-down" data-aos-offset="-100" data-aos-delay="100">Wpadnij na nasze social media!</h3>
-                        <div class="flex w-fit h-fit space-x-4" data-aos="fade-down" data-aos-offset="-100" data-aos-delay="100">
-                            <a href="https://www.facebook.com/ConceptRW?locale=pl_PL" target="_blank" class="text-4xl text-gray-400 hover:text-yellow-500 pr-4 pt-4 hover:-translate-y-1 duration-300 ease">
+                        <h3 class="text-xl text-yellow-500 pb-4" data-aos="fade-down" data-aos-offset="-100" data-aos-delay="100">Wpadnij na nasze social media!</h3>
+
+                        <div class="flex w-fit h-fit" data-aos="fade-down" data-aos-offset="-100" data-aos-delay="100">
+                            <a href="https://www.facebook.com/ConceptRW?locale=pl_PL" target="_blank" class="text-2xl md:text-3xl text-gray-200 hover:text-yellow-500 pr-4 pt-2 hover:-translate-y-1 duration-300 ease">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.instagram.com/concept.r.w/" target="_blank" class="text-4xl text-gray-400 hover:text-yellow-500 p-4 hover:-translate-y-1 duration-300 ease">
+                            <a href="https://www.instagram.com/concept.r.w/" target="_blank" class="text-2xl md:text-3xl text-gray-200 hover:text-yellow-500 p-2 pr-4 hover:-translate-y-1 duration-300 ease">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
-                            <a href="https://www.tiktok.com/@d_d_detailing" target="_blank" class="text-4xl text-gray-400 hover:text-yellow-500 p-4 hover:-translate-y-1 duration-300 ease">
+                            <a href="https://www.tiktok.com/@d_d_detailing" target="_blank" class="text-2xl md:text-3xl text-gray-200 hover:text-yellow-500 p-2 pr-4 hover:-translate-y-1 duration-300 ease">
                                 <i class="fa-brands fa-tiktok"></i>
                             </a>
-                            <a href="https://www.youtube.com/@RWConcept-dr8jl" target="_blank" class="text-4xl text-gray-400 hover:text-yellow-500 p-4 hover:-translate-y-1 duration-300 ease">
+                            <a href="https://www.youtube.com/@RWConcept-dr8jl" target="_blank" class="text-2xl md:text-3xl text-gray-200 hover:text-yellow-500 p-2 pr-4 hover:-translate-y-1 duration-300 ease">
                                 <i class="fa-brands fa-youtube"></i>
                             </a>
                         </div>
+
                     </div>
                     <div class="image-container w-full md:w-1/2 bg-image bg-center bg-no-repeat bg-cover justify-center items-center">
-                        <div class="image-text flex justify-center items-center">
+                        <div class="image-text flex justify-center items-center w-full">
                             <h1 class="text-white font-raleway font-extrabold uppercase text-5xl md:text-5xl lg:text-7xl bg-black/60 px-4 py-2" data-aos="fade-left" data-aos-offset="-300" data-aos-delay="100">O nas</h1>
                         </div>
                     </div>
@@ -279,47 +281,58 @@
                 <div class="h-max w-full">
                     <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true" pagination="true" data-aos="fade-down" data-aos-delay="300">
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/1.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/1.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/1.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
             
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/2.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/2.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/2.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
             
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/3.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/3.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/3.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
             
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/4.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/4.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/4.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
     
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/5.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/5.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/5.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/6.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/6.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/6.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/7.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/7.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/7.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/8.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/8.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/8.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/9.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/9.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/9.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/10.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/10.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/10.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
 
                         <swiper-slide>
-                            <img src="./images/gallery/4.11_wiekszeObrazy/11.webp" loading="lazy"/>
+                            <img src="./images/gallery/4.11/11.webp" loading="lazy" class="block md:hidden"/>
+                            <img src="./images/gallery/4.11_wiekszeObrazy/11.webp" loading="lazy" class="hidden md:block"/>
                         </swiper-slide>
                     </swiper-container>
             
@@ -488,6 +501,9 @@
         <!-- AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+        <!-- Mail sender -->
+        <script src="./js/mailsender.js"></script>
+
         <!-- Loading Page Script -->
         <script src="./js/loading.js"></script>
 
@@ -507,10 +523,6 @@
         <!-- Swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
         <script src="./js/swiper.js"></script>
-
-        <!-- Mail sender -->
-
-        <script src="./js/mailsender.js"></script>
 
         <!-- Awesome Icons -->
         <script src="https://kit.fontawesome.com/3fd4863eda.js" crossorigin="anonymous"></script>
