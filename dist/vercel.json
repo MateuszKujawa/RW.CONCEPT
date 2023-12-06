@@ -1,9 +1,5 @@
 {
-    "redirects": [
-      {
-        "source": "/:path*",
-        "destination": "/:path*.html",
-        "statusCode": 200
-      }
-    ]
-  }
+  "rewrites": [
+    { "source": "/:path*", "destination": "/dist/:path*" }
+  ]
+}
