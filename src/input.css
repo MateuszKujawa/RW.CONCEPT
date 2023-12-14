@@ -94,7 +94,6 @@ body.loading {
 
 
 /* About us style */
-
 .bg-image {
   background-image: url('./images/backgrounds/bg-about.webp');
   background-attachment: fixed;
@@ -154,8 +153,7 @@ body.loading {
 
 
 
-
-/* Swiper */
+/* Gallery Swiper */
 swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -205,12 +203,12 @@ swiper-slide img {
   }
 
   .mySwiper {
-    width: 90%;
+    width: 100%;
   }
 
   .mySwiper2 {
-    height: 15%;
-    width: 99%;
+    height: 25%;
+    width: 100%;
   }
 }
 
@@ -224,7 +222,7 @@ swiper-slide img {
   }
 
   .mySwiper {
-    width: 100%;
+    width: 98%;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -253,9 +251,9 @@ swiper-slide img {
   background-image: url(./images/backgrounds/by1.webp);
 }
 
-.bgimg-gallery{
+/* .bgimg-gallery{
   background-image: url(./images/backgrounds/by2.webp);
-}
+} */
 
 .big-logo{
   background-image: url(./images/icons/logo-small.webp);
