@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
-    var loadingOverlay = document.getElementById('loading-overlay');
-    var pageContent = document.getElementById('page-content');
+    const loadingOverlay = document.getElementById('loading-overlay');
+    const pageContent = document.getElementById('page-content');
 
     loadingOverlay.style.display = 'none';
     pageContent.style.display = 'block';
@@ -15,16 +15,20 @@ window.addEventListener('load', function() {
 
 // Monitorowanie załadowania filmu
 document.addEventListener('DOMContentLoaded', function() {
-    const video = document.querySelectorAll('#video');
+    const video = document.querySelector('#video'); // Użyj querySelector zamiast querySelectorAll
     const loadingOverlay = document.getElementById('loading-overlay');
 
-    video.addEventListener('loadeddata', () => {
-        // Zdarzenie wywoływane, gdy dane wideo zostały załadowane
-        loadingOverlay.style.display = 'none'; // Ukryj ekran ładowania
-    });
+    if (!video || !loadingOverlay) {
+        console.error('Nie znaleziono elementu video lub loading-overlay');
+    } else {
+        video.addEventListener('loadeddata', () => {
+            // Zdarzenie wywoływane, gdy dane wideo zostały załadowane
+            loadingOverlay.style.display = 'none'; // Ukryj ekran ładowania
+        });
 
-    video.addEventListener('error', () => {
-        // Zdarzenie wywoływane, gdy wystąpi błąd ładowania wideo
-        loadingOverlay.innerHTML = '<p>Wystąpił błąd podczas ładowania filmu.</p>';
-    });
+        video.addEventListener('error', () => {
+            // Zdarzenie wywoływane, gdy wystąpi błąd ładowania wideo
+            loadingOverlay.innerHTML = '<p>Wystąpił błąd podczas ładowania filmu.</p>';
+        });
+    }
 });

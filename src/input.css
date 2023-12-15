@@ -93,6 +93,7 @@ body.loading {
 
 
 
+
 /* About us style */
 .bg-image {
   background-image: url('./images/backgrounds/bg-about.webp');
@@ -250,10 +251,6 @@ swiper-slide img {
 .bgnews-img{
   background-image: url(./images/backgrounds/by1.webp);
 }
-
-/* .bgimg-gallery{
-  background-image: url(./images/backgrounds/by2.webp);
-} */
 
 .big-logo{
   background-image: url(./images/icons/logo-small.webp);
