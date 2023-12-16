@@ -95,6 +95,9 @@ body.loading {
 
 
 /* About us style */
+.bg-image{
+  background: url(../dist/images/backgrounds/bg-about2.webp);
+}
 .bg-image::before {
   content: "";
   position: absolute;
