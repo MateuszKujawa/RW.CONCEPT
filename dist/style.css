@@ -91,7 +91,7 @@ body.loading {
 /* About us style */
 
 .bg-image{
-  background: url(./dist/images/backgrounds/by1.webp);
+  background: url(./images/backgrounds/by1.webp);
 }
 
 .bg-image::before {
@@ -1376,10 +1376,6 @@ video {
 
 .bg-fixed{
   background-attachment: fixed;
-}
-
-.bg-local{
-  background-attachment: local;
 }
 
 .bg-center{
