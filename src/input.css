@@ -97,7 +97,7 @@ body.loading {
 /* About us style */
 
 .bg-image{
-  background: url(./images/backgrounds/by1.webp);
+  background: url(./images/backgrounds/bg-about.jpg);
 }
 
 .bg-image::before {
