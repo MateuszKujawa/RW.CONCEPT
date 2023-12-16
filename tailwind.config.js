@@ -12,7 +12,7 @@ export const theme = {
     },
     extend: {
       backgroundImage: {
-        'about-background-image': "url('/images/backgrounds/bg-about2.jpg')",
+        'about-background-image': "url('../dist/images/backgrounds/bg-about2.jpg')",
       },
     },
   },
