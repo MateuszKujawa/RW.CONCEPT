@@ -95,9 +95,7 @@ body.loading {
 
 
 /* About us style */
-.bg-image{
-  background-image: url(../images/backgrounds/about-bg.jpg);
-}
+
 .bg-image::before {
   content: "";
   position: absolute;
