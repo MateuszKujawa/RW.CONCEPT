@@ -10,12 +10,6 @@ export const theme = {
     colors: {
       'darkgray': '#0F0F0F',
     },
-    extend: {
-      backgroundImage: {
-        'about-background-image': "url('../dist/images/backgrounds/bg-about2.jpg')",
-      },
-    },
   },
-  variants: {},
-  plugins: [],
 };
+export const plugins = [];
