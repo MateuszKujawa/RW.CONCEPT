@@ -95,15 +95,6 @@ body.loading {
 
 
 /* About us style */
-.bg-image {
-  background-image: url('./images/backgrounds/bg-about.webp');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
 .bg-image::before {
   content: "";
   position: absolute;
@@ -112,12 +103,6 @@ body.loading {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
-}
-
-.image-container {
-  width: 50%;
-  background-attachment: fixed;
-  position: relative;
 }
 
 .image-text {

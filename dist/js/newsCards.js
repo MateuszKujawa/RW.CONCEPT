@@ -1,11 +1,18 @@
 function xData() {
     const posts = [
         {
+            linkToNewsPage: "./news.html#news2",
+            image: "./images/aktualnosci/Mikolajki2023/duza roz/fot9.webp",
+            title: "Moto mikołajki R/W CONCEPT 2023",
+            description: "Święty mikołaj wraz z zespołem R/W CONCEPT odwiedził Słupce.",
+        },
+        {
             linkToNewsPage: "./news.html#news1",
             image: "./images/aktualnosci/wystawa.webp",
             title: "I wystawa miłośników motoryzacji organizowana przez R/W Concept.",
             description: "Zorganizowaliśmy pierwszą przez nasz zespół wystawę samochodów i motocykli na targowisku miejskim w Słupcy. Wszystko to w szczytnym celu...",
         },
+        
         // Przykładowe dodanie kolejnego postu
         // {
         //     linkToNewsPage: "./pages/news.html#news2",
