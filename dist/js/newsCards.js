@@ -4,7 +4,7 @@ function xData() {
             linkToNewsPage: "./news.html#news2",
             image: "./images/aktualnosci/Mikolajki2023/duza roz/fot9.webp",
             title: "Moto mikołajki R/W CONCEPT 2023",
-            description: "Święty mikołaj wraz z zespołem R/W CONCEPT odwiedził Słupce.",
+            description: "Święty mikołaj i jego ekipa elfów zrobiła niespodziankę w Samarzewie i Słupcy.",
         },
         {
             linkToNewsPage: "./news.html#news1",

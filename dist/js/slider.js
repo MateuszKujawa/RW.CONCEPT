@@ -53,7 +53,8 @@ $(document).ready(function() {
         "./images/partners_images/proline.webp",
         "./images/partners_images/recaro.webp",
         "./images/partners_images/rrs.webp",
-        "./images/partners_images/tec2000.webp"
+        "./images/partners_images/tec2000.webp",
+        "./images/partners_images/shark.webp"
     ];
 
     owl.owlCarousel({
